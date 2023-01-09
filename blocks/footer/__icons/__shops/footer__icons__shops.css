@@ -1,0 +1,7 @@
+.footer__icons__shops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-gap: 2.5em;
+    color: var(--white);
+}

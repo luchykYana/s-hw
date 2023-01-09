@@ -1,0 +1,16 @@
+@import '__logo/header__logo.css';
+@import '__nav/header__nav.css';
+@import '__start-butons/header__start-buttons.css';
+
+.header {
+    height: 10vh;
+    display: grid;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray);
+    grid-template-columns: 14% 1fr 1fr 5.5fr 1.5fr 2fr 14%;
+    align-items: center;
+    /*position: -webkit-sticky; !* Safari *!*/
+    /*position: sticky;*/
+    /*top: 0;*/
+    /*z-index: 2;*/
+}

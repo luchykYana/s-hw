@@ -1,0 +1,6 @@
+.article__header__number {
+    font-size: 9.375em;
+    line-height: 150%;
+    font-weight: lighter;
+    color: rgba(1, 153, 109, 0.2);
+}

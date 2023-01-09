@@ -1,0 +1,6 @@
+@import '_block/footer__nav_block.css';
+@import '__item/footer__nav__item.css';
+
+.footer__nav {
+    grid-area: 2/2;
+}

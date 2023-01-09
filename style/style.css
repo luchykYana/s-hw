@@ -1,0 +1,43 @@
+@import '../blocks/header/header.css';
+@import '../blocks/button/btn.css';
+@import '../blocks/article/article.css';
+@import '../blocks/section/section.css';
+@import '../blocks/footer/footer.css';
+@import '../blocks/icon/icon.css';
+
+:root {
+    --black: #292929;
+    --dark-green: #245852;
+    --green: #01996D;
+    --dark--gray: #424242;
+    --gray: #D6D6D6;
+    --white: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.8em;
+}
+
+h2 {
+    font-size: 3.125em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a, button, p {
+    font-family: Lato, Verdana, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #292929;
+}

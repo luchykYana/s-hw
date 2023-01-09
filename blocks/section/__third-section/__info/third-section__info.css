@@ -1,0 +1,7 @@
+@import '__header/third-section__info__header.css';
+@import '__paragraph/third-section__info__paragraph.css';
+
+.third-section__info {
+    grid-area: 2/2;
+    color: var(--white);
+}

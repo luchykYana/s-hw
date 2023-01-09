@@ -3,9 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
+<header class="header" id="start">
+    <img class="header__logo" src="images/logo.png" alt="logo">
+
+    <nav class="header__nav">
+        <ul class="header__nav_flex">
+            <li class="header__nav__item">
+                <a href="#">Why Alivio</a>
+            </li>
+            <li class="header__nav__item">
+                <a href="#">Solutions</a>
+            </li>
+            <li class="header__nav__item">
+                <a href="#">Community</a>
+            </li>
+            <li class="header__nav__item">
+                <a href="#">Pricing</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header__start-buttons">
+        <button class="btn btn_secondary">
+            <span>Sign in</span>
+        </button>
+
+        <button class="btn btn_primary">
+            <span>Start trial</span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="section first-section">
+        <div class="first-section__info">
+            <h1 class="first-section__info__title">Be aware, Manage well.</h1>
+            <p class="first-section__info__paragraph">
+                Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal
+                experience, to overcome your stress.
+            </p>
+            <button class="btn btn_primary">Find Your Way</button>
+        </div>
+    </section>
+
+    <section class="section second-section">
+        <div class="second-section__description">
+            <div class="second-section__description__top">
+                <p class="section__remark">How it works</p>
+            </div>
+            <div class="second-section__description__bottom">
+                <h2 class="second-section__description__bottom__header">Understand & Release the stress in 3 steps</h2>
+                <p class="second-section__description__bottom__paragraph">Alivio offers as many journals it takes,
+                    tackling different areas such as anxiety, overwhelmedness,
+                    sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and
+                    guide you in how to manage stress.</p>
+            </div>
+        </div>
+
+        <div class="second-section__content">
+            <article class="article second-section__first-article article_positioned">
+                <header class="article__header">
+                    <h3 class="article__header__number">01</h3>
+                    <h3 class="article__header_positioned first-article_right">Personalize</h3>
+                </header>
+                <p>Answer a quick survey about how you express yourself, what causes you stress, and what area would you
+                    like to work on. This way, we can fully personalize your journal!</p>
+                <div class="article__image first-article__image"></div>
+            </article>
+
+            <article class="article second-section__second-article article_positioned">
+                <header class="article__header">
+                    <h3 class="article__header__number">02</h3>
+                    <h3 class="article__header_positioned second-article_right">Write & Understand</h3>
+                </header>
+                <p>Write, draw, reflect, understand. Alivio will guide you through the
+                    prompts and will help you manage your stress!</p>
+                <div class="article__image second-article__image"></div>
+            </article>
+
+            <article class="article second-section__third-article article_positioned">
+                <header class="article__header">
+                    <h3 class="article__header__number">03</h3>
+                    <h3 class="article__header_positioned third-article_right">Alivio!</h3>
+                </header>
+                <p>Now you are aware, and have a way to manage and overcome your own stress. What are you waiting for?
+                    Alivio today!</p>
+                <div class="article__image third-article__image"></div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section third-section">
+        <div class="third-section__info">
+            <h2 class="third-section__info__header">Let's hear about Kayla's success story</h2>
+            <p class="third-section__info__paragraph">See how well Alivio works in a real customer’s life. </p>
+            <button class="btn btn_primary">Let’s get started</button>
+        </div>
+
+        <div class="third-section__video">
+            <video width="100%" height="auto" poster="images/third-section__video.png" controls>
+                <source src="#" type="video/mp4">
+                <source src="#" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section class="section fourth-section">
+        <div class="fourth-section__pictures">
+            <div class="fourth-section__pictures__card fourth-section__pictures__card_positioned">
+                <img src="images/fourth-section__card.png" alt="card">
+            </div>
+            <div class="fourth-section__pictures__girl">
+                <img src="images/fourth-section__photo.png" alt="girl">
+            </div>
+        </div>
+
+        <div class="fourth-section__info">
+            <p class="section__remark">Our product</p>
+            <h2 class="fourth-section__info__header">You tell us your stress, We make your diary</h2>
+            <p>Everyone experiences it, and in different ways. Let Alivio guide you, in a personalized journal
+                experience, to overcome your stress.</p>
+            <button class="btn btn_primary">Find Your Way</button>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <nav class="footer__nav">
+        <ul class="footer__nav_block">
+            <li class="footer__nav__item footer__logo">
+                <a href="#start">Alivio</a>
+            </li>
+            <li class="footer__nav__item">
+                <a href="#">Why Alivio</a>
+            </li>
+            <li class="footer__nav__item">
+                <a href="#">Solutions</a>
+            </li>
+            <li class="footer__nav__item">
+                <a href="#">Community</a>
+            </li>
+            <li class="footer__nav__item">
+                <a href="#">Pricing</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="footer__icons">
+        <div class="footer__icons__social-networks">
+            <button class="icon icon_facebook" onclick="window.open('https://uk-ua.facebook.com/', '_blank')"></button>
+            <button class="icon icon_instagram" onclick="window.open('https://www.instagram.com/', '_blank')"></button>
+            <button class="icon icon_twitter" onclick="window.open('https://twitter.com/?lang=uk', '_blank')"></button>
+        </div>
+
+        <div class="footer__icons__shops">
+            <p>Discover our solutions</p>
+            <div>
+                <button class="button-icon button-icon_google-play"
+                        onclick="window.open('https://play.google.com/store/games?hl=uk', '_blank')"></button>
+                <button class="button-icon button-icon_apple-store"
+                        onclick="window.open('https://www.apple.com/ua/app-store/', '_blank')"></button>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

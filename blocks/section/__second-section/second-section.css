@@ -1,0 +1,8 @@
+@import '__description/second-section__description.css';
+@import '__content/second-section__content.css';
+
+.second-section {
+    height: 165vh;
+    display: grid;
+    grid-template: 7fr 12fr 60fr 10fr / 14% 1fr 14%;
+}

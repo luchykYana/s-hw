@@ -1,0 +1,4 @@
+.icon_facebook {
+    background: var(--white) url('../../../images/facebook_icon.svg') no-repeat center;
+    background-size: 25%;
+}

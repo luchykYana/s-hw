@@ -1,0 +1,10 @@
+@import '__nav/footer__nav.css';
+@import '__logo/footer__logo.css';
+@import '__icons/footer__icons.css';
+
+.footer {
+    height: 66vh;
+    background-color: var(--dark-green);
+    display: grid;
+    grid-template: 15% 1fr / 14% 2fr 1fr 10fr 1fr;
+}

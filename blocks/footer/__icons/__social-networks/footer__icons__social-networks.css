@@ -1,0 +1,5 @@
+.footer__icons__social-networks {
+    width: 16vw;
+    display: flex;
+    justify-content: space-between;
+}

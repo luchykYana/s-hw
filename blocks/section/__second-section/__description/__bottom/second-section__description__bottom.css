@@ -1,0 +1,8 @@
+@import '__header/second-section__description__bottom__header.css';
+@import '__paragraph/second-section__description__bottom__paragraph.css';
+
+.second-section__description__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

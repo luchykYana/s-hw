@@ -1,0 +1,5 @@
+@import '__bottom/second-section__description__bottom.css';
+
+.second-section__description {
+    grid-area: 2/2;
+}

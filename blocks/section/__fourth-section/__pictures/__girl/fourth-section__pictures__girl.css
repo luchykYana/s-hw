@@ -1,0 +1,8 @@
+.fourth-section__pictures__girl {
+    display: flex;
+    justify-content: center;
+}
+
+.fourth-section__pictures__girl > img {
+    width: 80%;
+}

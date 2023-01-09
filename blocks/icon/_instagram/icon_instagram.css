@@ -1,0 +1,4 @@
+.icon_instagram {
+    background: url('../../../images/instagram_icon.svg') no-repeat center/60%,
+    conic-gradient(from 180deg, #80A4CE, #F289AA, #C68BF0, #D164DA, #C963E8, #BFC2E8, #FFC999, #BAD0F1, #FFFFFF) center no-repeat;
+}

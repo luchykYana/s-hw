@@ -1,0 +1,6 @@
+@import '_flex/header__nav_flex.css';
+@import '__item/header__nav__item.css';
+
+.header__nav {
+    grid-column: 4;
+}

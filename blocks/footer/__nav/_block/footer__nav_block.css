@@ -1,0 +1,5 @@
+.footer__nav_block {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 5vh;
+}

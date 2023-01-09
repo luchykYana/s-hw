@@ -1,0 +1,9 @@
+.footer__nav__item a {
+    color: var(--white);
+    transition: color 200ms linear;
+    cursor: pointer;
+}
+
+.footer__nav__item a:hover {
+    color: var(--black);
+}

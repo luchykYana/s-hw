@@ -1,0 +1,10 @@
+@import '__info/third-section__info.css';
+@import '__video/third-section__video.css';
+
+.third-section {
+    height: 90vh;
+    background: var(--dark-green);
+    display: grid;
+    grid-template: 25fr 56fr 19fr / 14% 1.1fr 0.1fr 1.5fr 14%;
+    align-items: center;
+}

@@ -1,0 +1,6 @@
+@import '__girl/fourth-section__pictures__girl.css';
+@import '__card/_positioned/fourth-section__pictures__card_positioned.css';
+
+.fourth-section__pictures {
+    grid-area: 2/2;
+}

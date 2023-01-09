@@ -1,0 +1,13 @@
+@import '_primary/btn_primary.css';
+@import '_secondary/btn_secondary.css';
+
+.btn {
+    border: 1px solid transparent;
+    border-radius: 0.2em;
+    padding: 0.5em 2em;
+    white-space: nowrap;
+    display: inline-block;
+    width: fit-content;
+    transition: color 300ms, background-color 300ms;
+    cursor: pointer;
+}

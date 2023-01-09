@@ -1,0 +1,10 @@
+.fourth-section__pictures__card_positioned {
+    position: relative;
+}
+
+.fourth-section__pictures__card_positioned > img {
+    width: 45%;
+    position: absolute;
+    top: 33.5vh;
+    left: -1.3vw;
+}

@@ -1,0 +1,19 @@
+.header__nav__item a:link {
+    color: var(--black);
+    padding: 0.5em 1em;
+    transition: background 300ms, color 200ms linear;
+    white-space: nowrap;
+}
+
+.header__nav__item a:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+/*.header__nav__item a:visited{*/
+/*    */
+/*}*/
+
+.header__nav__item a:active {
+    color: var(--black);
+}

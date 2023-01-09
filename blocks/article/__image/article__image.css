@@ -1,0 +1,8 @@
+@import '_first/article__image_first.css';
+@import '_second/article__image_second.css';
+@import '_third/article__image_third.css';
+
+.article__image {
+    height: 50vh;
+    margin-top: 5vh;
+}

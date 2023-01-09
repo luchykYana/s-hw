@@ -1,0 +1,11 @@
+@import '__info/first-section__info.css';
+
+.first-section {
+    height: 90vh;
+    display: grid;
+    grid-template: 20fr 42fr 38fr / 14% 28% 1fr 14%;
+    background: linear-gradient(112.5deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.0) 50%),
+                linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.0) 30%),
+                url('../../../images/first-section-bg.png') right no-repeat;
+    background-size: contain;
+}

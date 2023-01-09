@@ -1,0 +1,8 @@
+@import '__info/fourth-section__info.css';
+@import '__pictures/fourth-section__pictures.css';
+
+.fourth-section {
+    height: 90vh;
+    display: grid;
+    grid-template: 1fr 3fr 1.5fr / 14% 1.3fr 1fr 14%;
+}

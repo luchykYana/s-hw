@@ -1,0 +1,4 @@
+.first-article__image {
+    background: url('../../../../images/second-section__first-article.png') no-repeat;
+    background-size: contain;
+}

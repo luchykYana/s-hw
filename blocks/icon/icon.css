@@ -1,0 +1,17 @@
+@import '_facebook/icon_facebook.css';
+@import '_instagram/icon_instagram.css';
+@import '_twitter/icon_twitter.css';
+
+@import '_google-play/button-icon_google-play.css';
+@import '_apple-store/button-icon_apple-store.css';
+
+.icon {
+    padding: 1.5em;
+    border-radius: 2em;
+}
+
+.button-icon {
+    padding: 1.5em 5em;
+    border-radius: 0.7em;
+    margin-left: 0.5em;
+}

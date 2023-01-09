@@ -1,0 +1,14 @@
+.article_positioned {
+    position: relative;
+}
+
+.second-section__first-article {
+}
+
+.second-section__second-article {
+    top: 23%;
+}
+
+.second-section__third-article {
+    top: 5%;
+}

@@ -1,0 +1,9 @@
+.third-section__video {
+    grid-area: 2/4;
+    width: 100%;
+    height: auto;
+}
+
+.third-section__video > video {
+    border-radius: 1em;
+}

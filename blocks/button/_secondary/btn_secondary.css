@@ -1,0 +1,8 @@
+.btn_secondary {
+    background-color: var(--white);
+    color: var(--black);
+}
+.btn_secondary:hover {
+    background-color: var(--green);
+    color: var(--white);
+}

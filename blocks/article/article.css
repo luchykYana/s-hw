@@ -1,0 +1,7 @@
+@import '__header/article__header.css';
+@import '__image/article__image.css';
+@import '_positioned/article_positioned.css';
+
+.article {
+    width: 30%;
+}

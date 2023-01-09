@@ -1,0 +1,15 @@
+.article__header_positioned{
+    position: relative;
+}
+
+.first-article_right {
+    right: 15%;
+}
+
+.second-article_right {
+    right: 20%;
+}
+
+.third-article_right {
+    right: 12%;
+}

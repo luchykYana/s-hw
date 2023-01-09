@@ -1,0 +1,8 @@
+@import '__number/article__header__number.css';
+@import '_positioned/article__header_positioned.css';
+
+.article__header {
+    display: flex;
+    align-items: baseline;
+    width: 110%;
+}

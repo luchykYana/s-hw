@@ -1,0 +1,10 @@
+@import '__title/first-section__info__title.css';
+@import '__paragraph/first-section__info__paragraph.css';
+
+.first-section__info {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2em;
+}

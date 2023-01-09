@@ -1,0 +1,4 @@
+.icon_twitter {
+    background: var(--white) url('../../../images/twitter_icon.svg') no-repeat center;
+    background-size: 50%;
+}

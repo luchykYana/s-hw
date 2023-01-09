@@ -1,0 +1,5 @@
+.second-section__content {
+    grid-area: 3/2;
+    display: flex;
+    justify-content: space-between;
+}

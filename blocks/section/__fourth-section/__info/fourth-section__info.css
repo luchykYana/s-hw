@@ -1,0 +1,8 @@
+@import '__header/fourth-section__info__header.css';
+
+.fourth-section__info {
+    grid-area: 2/3;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 3vh;
+}
