@@ -8,10 +8,22 @@
 .icon {
     padding: 1.5em;
     border-radius: 2em;
+    transition: opacity 200ms;
+    cursor: pointer;
+}
+
+.icon:hover {
+    opacity: 0.5;
 }
 
 .button-icon {
     padding: 1.5em 5em;
     border-radius: 0.7em;
     margin-left: 0.5em;
+    transition: opacity 200ms;
+    cursor: pointer;
+}
+
+.button-icon:hover {
+    opacity: 0.5;
 }
