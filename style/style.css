@@ -1,0 +1,75 @@
+.heading-lg {
+  font-family: Volkhov, Georgia, serif;
+  font-weight: bold;
+  line-height: 1.06;
+  font-size: 5.25em;
+}
+
+.heading-md {
+  font-family: Volkhov, Georgia, serif;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 3.125em;
+}
+
+.heading-sm {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.25em;
+}
+
+.heading-xs {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.245;
+  font-size: 1em;
+}
+
+.main-caption {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 1.25em;
+}
+
+.second-caption {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.125em;
+}
+
+.heading-sm, .heading-md, .heading-lg {
+  color: #181E4B;
+}
+
+.heading-xs, .second-caption {
+  color: #5E6282;
+}
+
+.main-caption {
+  color: #DF6951;
+}
+
+.main-caption, .second-caption {
+  text-transform: capitalize;
+}
+
+.btn, .info-btn {
+  width: 11.806vw;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  font-size: 1.125em;
+  line-height: 1.5;
+  padding: 2.5vh 1.736vw;
+  border-radius: 0.5em;
+  font-family: "Open Sans", Arial, sans-serif;
+  box-shadow: 0 20px 50px #ffdcae;
+}
+
+.info-btn {
+  background: #F1A501;
+}
+
+/*# sourceMappingURL=style.css.map */
