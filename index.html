@@ -13,13 +13,223 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<h1 class="heading-lg">Travel, enjoy and live a new and full life</h1>
-<h1 class="heading-md">Book your next trip in 3 easy steps</h1>
-<h1 class="heading-sm">Calculated Weather </h1>
-<h1 class="heading-xs">Choose Destination</h1>
-<h1 class="main-caption">Best Destinations around the world</h1>
-<h1 class="second-caption">category</h1>
-<h1 class="second-caption">Top Selling</h1>
-<button class="info-btn">Find out more</button>
+
+<header class="page-header grid-container">
+    <div class="grid-content page-header__content">
+        <div class="page-header__logo">
+            <img src="assets/Logo.svg" alt="logo">
+        </div>
+
+        <nav class="main-nav page-header__nav">
+            <a href="#">Destinations</a>
+            <a href="#">Hotels</a>
+            <a href="#">Flights</a>
+            <a href="#">Bookings</a>
+        </nav>
+
+        <div class="page-header__buttons">
+            <button class="auth-btn">Login</button>
+            <button class="auth-btn">Sign up</button>
+        </div>
+
+        <div class="page-header__select">
+            <label for="lang"></label>
+            <select name="lang" id="lang">
+                <option value="EN">EN</option>
+                <option value="UA">UA</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+<main class="grid-container">
+    <section class="grid-content section-one hero">
+
+        <article class="section-one__article">
+            <p class="main-caption">Best Destinations around the world</p>
+            <header class="heading-lg">Travel, enjoy and live a new and full life</header>
+            <p class="paragraph">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it
+                engrossed listening. Park gate sell they west hard for the.</p>
+
+            <div class="section-one__buttons">
+                <button class="btn btn--info">Find out more</button>
+                <button class="btn btn--play"><i class="btn--play__icon"></i>Play demo</button>
+            </div>
+        </article>
+
+        <div>
+            <img src="assets/plane.svg" alt="plane" id="plane1">
+            <img src="assets/plane.svg" alt="plane" id="plane2">
+        </div>
+
+    </section>
+
+    <section class="grid-content section-two">
+
+        <header class="section-two__header">
+            <p class="second-caption">Category</p>
+            <h2 class="heading-md">We offer best services</h2>
+        </header>
+
+        <div class="section-two__content">
+            <article class="card--small">
+                <div class="card--small__image image--first"></div>
+                <h3 class="heading-sm">Calculated weather</h3>
+                <p class="paragraph">Built Wicket longer admire do barton vanity itself do in it.</p>
+                <div class="decor--none"></div>
+            </article>
+
+            <article class="card--small">
+                <div class="card--small__image image--second"></div>
+                <h3 class="heading-sm">Best flights</h3>
+                <p class="paragraph">Engrossed listening. Park gate sell they west hard for the.</p>
+                <div class="decor--none"></div>
+            </article>
+
+            <article class="card--small">
+                <div class="card--small__image image--third"></div>
+                <h3 class="heading-sm">Local events</h3>
+                <p class="paragraph">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                <div class="decor--none"></div>
+            </article>
+
+            <article class="card--small">
+                <div class="card--small__image image--fourth"></div>
+                <h3 class="heading-sm">Customization</h3>
+                <p class="paragraph">We deliver outsourced aviation services for military customers</p>
+                <div class="decor--none"></div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="grid-content section-three">
+        <header class="section-three__header">
+            <p class="second-caption">Top selling</p>
+            <h2 class="heading-md">Top destinations</h2></header>
+
+        <div class="section-three__content">
+            <article class="card--big">
+                <div class="image--first">
+                    <div class="card--big__description">
+
+                        <div class="card--big__description__top">
+                            <p class="location-paragraph">Rome, Italy</p>
+                            <p class="location-paragraph">$5,42k</p>
+                        </div>
+
+                        <div class="card--big__description__bottom">
+                            <img src="assets/icons/navigation.svg" alt="arrow">
+                            <p class="paragraph">10 Days Trip</p>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="card--big">
+                <div class="image--second">
+                    <div class="card--big__description">
+
+                        <div class="card--big__description__top">
+                            <p class="location-paragraph">London, UK</p>
+                            <p class="location-paragraph">$4.2k</p>
+                        </div>
+
+                        <div class="card--big__description__bottom">
+                            <img src="assets/icons/navigation.svg" alt="arrow">
+                            <p class="paragraph">12 Days Trip</p>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="card--big">
+                <div class="image--third">
+                    <div class="card--big__description">
+
+                        <div class="card--big__description__top">
+                            <p class="location-paragraph">Full Europe</p>
+                            <p class="location-paragraph">$15k</p>
+                        </div>
+
+                        <div class="card--big__description__bottom">
+                            <img src="assets/icons/navigation.svg" alt="arrow">
+                            <p class="paragraph">28 Days Trip</p>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="grid-content section-fourth">
+
+        <div class="section-fourth__left-part">
+            <p class="second-caption">Easy and fast</p>
+            <h2 class="heading-md">Book your next trip in 3 easy steps</h2>
+            <ul class="section-fourth__list">
+                <li>
+                    <h4 class="heading-xs">Choose destination</h4>
+                    <p class="paragraph_list-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                    </p>
+                </li>
+
+                <li>
+                    <h4 class="heading-xs">Choose destination</h4>
+                    <p class="paragraph_list-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                    </p>
+                </li>
+
+                <li>
+                    <h4 class="heading-xs">Choose destination</h4>
+                    <p class="paragraph_list-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section-fourth__right-part"></div>
+
+    </section>
+</main>
+
+
+<footer class="grid-container">
+</footer>
+
 </body>
 </html>
+
+
+<!--<h1 class="heading-lg">Travel, enjoy and live a new and full life</h1>-->
+<!--<h1 class="heading-md">Book your next trip in 3 easy steps</h1>-->
+<!--<h1 class="heading-sm">Calculated Weather </h1>-->
+<!--<h1 class="heading-xs">Choose Destination</h1>-->
+<!--<h1 class="main-caption">Best Destinations around the world</h1>-->
+<!--<h1 class="second-caption">category</h1>-->
+<!--<h1 class="second-caption">Top Selling</h1>-->
+<!--<p class="paragraph">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed-->
+<!--    listening. Park gate sell they west hard for the.</p>-->
+<!--<p class="paragraph_card-p">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it-->
+<!--    engrossed-->
+<!--    listening. Park gate sell they west hard for the.</p>-->
+<!--<p class="paragraph_list-p">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it-->
+<!--    engrossed-->
+<!--    listening. Park gate sell they west hard for the.</p>-->
+<!--<div style="display: flex; width: 600px; justify-content: space-between">-->
+<!--    <button class="info-btn">Find out more</button>-->
+<!--    <button class="play-btn"><i class="play-btn__icon"></i>Play Demo</button>-->
+<!--    <button class="form-btn">Subscribe</button>-->
+<!--</div>-->
+
+<!--<h4 class="heading-xs">Choose destination</h4>-->
+<!--<p class="paragraph_list-p">-->
+<!--    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.-->
+<!--</p>-->

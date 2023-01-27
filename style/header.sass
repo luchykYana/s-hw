@@ -1,0 +1,41 @@
+@import "vars"
+@import "typography"
+
+.page-header
+  margin-top: 4.8vh
+  height: $header-height
+  width: 100%
+  align-items: center
+
+  .main-nav
+    @extend .heading-nav
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    align-items: center
+
+  &__content
+    display: grid
+    grid-template-columns: 3fr 6fr 2fr 1fr
+    align-items: center
+
+  &__nav
+    a
+      justify-self: center
+      transition: font-size 100ms, color 100ms
+      cursor: pointer
+    a:hover
+      font-size: 1.2em
+      color: $yellow
+
+  &__buttons
+    display: flex
+    justify-self: center
+    gap: $gap-md
+
+  &__select
+    justify-self: right
+
+  &__select select
+    border: none
+    background: transparent
+    @extend .heading-nav

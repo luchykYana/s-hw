@@ -1,0 +1,12 @@
+.page-header {
+  height: var(--header-height);
+  background-color: rgba(95, 79, 73, 0.6);
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+/*# sourceMappingURL=header.css.map */

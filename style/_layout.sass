@@ -1,0 +1,13 @@
+@import "vars"
+
+.grid-container
+  $flap: minmax(16px, 1fr)
+  $content: minmax($min-width, $max-width)
+  display: grid
+  grid-template-columns: $flap $content $flap
+
+.grid-content
+  grid-column: 2 / 3
+
+.grid-content-full
+  grid-column: 1 / -1

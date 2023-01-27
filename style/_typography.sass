@@ -24,14 +24,38 @@
 .second-caption
   @include fontStyle(lighter, 1.125em, normal, $second-font, $safe-sans-serif, sans-serif)
 
+.heading-nav
+  @include fontStyle(lighter, 1.0625em, bold, $second-font, $safe-sans-serif, sans-serif)
+
+.btn-text
+  @include fontStyle(normal, 1.125em, normal, $second-font, $safe-sans-serif, sans-serif)
+
 .heading-sm, .heading-md, .heading-lg
   color: $blue
 
-.heading-xs, .second-caption
+.heading-xs, .second-caption, .paragraph, .location-paragraph
   color: $violet
 
 .main-caption
   color: $orange
 
-.main-caption, .second-caption
+.heading-sm, .heading-md
   text-transform: capitalize
+
+.main-caption, .second-caption
+  text-transform: uppercase
+
+.paragraph
+  @include fontStyle(normal, 1em, 2, $second-font, $safe-sans-serif, sans-serif)
+
+  &_card-p
+    @extend .paragraph
+    text-align: center
+    line-height: 1.5
+
+  &_list-p
+    @extend .paragraph
+    line-height: 1.2
+
+.location-paragraph
+  @include fontStyle(normal, 1.125em, 2, $second-font, $safe-sans-serif, sans-serif)
