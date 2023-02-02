@@ -380,7 +380,8 @@
 
 <script>
     const animateElement = document.getElementById("animate");
-    animateElement.onmouseenter = () => animateElement.style.animation = "3s plane linear"
+    const plane = document.getElementById("plane1");
+    plane.onmouseenter = () => animateElement.style.animation = "3s plane linear"
     animateElement.onanimationend = () => animateElement.style.animation = "0s none"
 </script>
 
