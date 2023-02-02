@@ -59,7 +59,7 @@
         </article>
 
         <div>
-            <div class="animation-container"><img src="assets/plane.svg" alt="plane" id="plane1"></div>
+            <div class="animation-container" id="animate"><img src="assets/plane.svg" alt="plane" id="plane1"></div>
             <img src="assets/plane.svg" alt="plane" id="plane2">
         </div>
 
@@ -377,6 +377,12 @@
         </div>
     </div>
 </footer>
+
+<script>
+    const animateElement = document.getElementById("animate");
+    animateElement.onmouseenter = () => animateElement.style.animation = "3s plane linear"
+    animateElement.onanimationend = () => animateElement.style.animation = "0s none"
+</script>
 
 </body>
 </html>

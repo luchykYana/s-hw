@@ -674,9 +674,6 @@ a {
   height: 55%;
   border-radius: 50%;
   position: relative;
-  animation: plane linear;
-  animation-duration: 3s;
-  animation-delay: 3s;
 }
 
 .section-two {
