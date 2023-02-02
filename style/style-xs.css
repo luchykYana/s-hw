@@ -253,9 +253,6 @@ a {
     grid-row-gap: 20px;
     height: 30vh;
   }
-  .section-one__article .heading-lg {
-    width: 80%;
-  }
   .section-one #plane2 {
     display: none;
   }
@@ -491,7 +488,7 @@ a {
     width: 72%;
     height: 5vh;
     border-radius: 0;
-    margin: 0.8vh auto;
+    margin: 3vh auto 1vh;
     width: 90%;
   }
   .page-header .main-nav {
@@ -952,7 +949,7 @@ a {
 }
 @media only screen and (max-width: 480px) {
   body {
-    width: 87%;
+    width: 100%;
     overflow-x: hidden;
   }
 }
