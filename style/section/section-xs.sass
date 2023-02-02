@@ -1,0 +1,111 @@
+@import "section-bg-images"
+@import "../general/mixins"
+@import "../general/vars"
+@import "../animation/plane-animation"
+
+@media only screen and (max-width: 480px)
+  .header
+    grid-row-gap: .5vh
+
+  .section-one
+    @include grid(1fr, 1fr)
+    width: 90%
+    margin: 5vh auto 1vh
+
+    &__article
+      @include flex(column, normal, normal)
+      width: 150%
+      grid-row-gap: 20px
+      height: 30vh
+
+      .heading-lg
+        width: 80%
+
+    #plane2
+      display: none
+
+    .animation-container
+      @include width-height-radius(0, 0, 0)
+      display: none
+
+  .section-two
+    background: none
+    width: 90%
+    margin: 3vh auto 5vh
+
+    &__header
+      @extend .header
+      margin-bottom: 5vh
+
+    &__content
+      @include flex(column, normal, center)
+
+  .section-three
+    width: 90%
+    background: none
+    margin: 0 auto 5vh
+
+    &__header
+      @extend .header
+      margin-bottom: 5vh
+
+    &__content
+      @include flex(column, normal, center)
+
+  .section-fourth
+    width: 90%
+    @include flex(row, center, center)
+    margin: 0 auto 5vh
+
+    &__left-part
+      .second-caption
+        text-align: center
+      .heading-md
+        text-align: center
+        width: 95%
+        margin-bottom: 3vh
+
+    &__right-part
+      display: none
+
+    &__list
+      width: 100%
+
+    &__list li
+      margin-bottom: 4vh
+
+  .section-fifth
+    width: 90%
+    @include flex(column, center, center)
+    padding-left: 0
+    margin: 0 auto 5vh
+
+    &__left-side
+      .second-caption
+        text-align: center
+        margin-bottom: 10px
+
+    .image-circle
+      left: 200px
+      top: 170px
+
+    .image-circle > img
+      @include width-height-radius(45px, 45px, 50%)
+
+  .section-sixth
+    @include flex(row, space-between, center)
+    padding: 0 10%
+    width: 90%
+    flex-wrap: wrap
+    margin: 0 auto 3vh
+
+  .section-seventh
+    width: 90%
+    margin: 0 auto 5vh
+    background: none
+    height: 30vh
+
+    &__content
+      background: url("../../assets/background-decor/circles_one.svg") -80px 30px no-repeat, $light-violet
+      @include grid(3fr 1fr, 1fr)
+      height: 30vh

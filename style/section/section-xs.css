@@ -1,0 +1,116 @@
+.section-two {
+  background: url("../../assets/background-decor/pluses_one.svg") top right no-repeat;
+}
+
+.section-three {
+  background: url("../../assets/background-decor/spring.svg") right 85% no-repeat;
+}
+
+.section-sixth .first-company {
+  background: url("../../assets/companies/first-company.png") center no-repeat;
+  background-size: contain;
+}
+.section-sixth .second-company {
+  background: url("../../assets/companies/second-company.png") center no-repeat;
+  background-size: contain;
+}
+.section-sixth .third-company {
+  background: url("../../assets/companies/third-company.png") center no-repeat;
+  background-size: contain;
+}
+.section-sixth .fourth-company {
+  background: url("../../assets/companies/fourth-company.png") center no-repeat;
+  background-size: contain;
+}
+.section-sixth .fifth-company {
+  background: url("../../assets/companies/fifth-company.png") center no-repeat;
+  background-size: 80%;
+}
+
+.section-seventh {
+  background: url("../../assets/background-decor/pluses_two.svg") 96% bottom no-repeat;
+}
+.section-seventh__content {
+  background: url("../../assets/background-decor/circles_one.svg") -80px 30px no-repeat, url("../../assets/background-decor/circles_two.svg") 100% -30px no-repeat, rgba(223, 215, 249, 0.25);
+}
+
+@keyframes plane {
+  0% {
+    rotate: 0deg;
+    top: 0;
+  }
+  35% {
+    top: -50px;
+    right: 0;
+    rotate: 280deg;
+  }
+  50% {
+    top: -500px;
+    right: 200px;
+    rotate: 250deg;
+  }
+  55% {
+    top: -500px;
+    right: 1200px;
+    rotate: 200deg;
+  }
+  56% {
+    top: 200px;
+  }
+  57% {
+    top: 450px;
+    right: 1100px;
+    rotate: 70deg;
+  }
+  60% {
+    top: 650px;
+    right: 1000px;
+    rotate: 40deg;
+  }
+  75% {
+    top: 500px;
+    right: 600px;
+    rotate: 20deg;
+  }
+  100% {
+    top: 0;
+    right: 0;
+    rotate: 0deg;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    grid-row-gap: 0.5vh;
+  }
+  .section-one {
+    display: grid;
+    grid-template: 1fr/repeat(2, 1fr);
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+  }
+  .section-one__article {
+    display: grid;
+    grid-template: 1fr 7fr 3fr 1fr/1fr;
+    padding-top: 2vh;
+    height: 65vh;
+  }
+  .section-one__article .paragraph {
+    width: 78%;
+  }
+  .section-one__buttons {
+    display: flex;
+    grid-column-gap: 3vw;
+  }
+  .section-one #plane2 {
+    display: none;
+  }
+  .section-one .animation-container {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=section-xs.css.map */

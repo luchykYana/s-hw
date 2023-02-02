@@ -1,0 +1,208 @@
+@import "../general/vars"
+@import "../general/mixins"
+
+.img
+  @include width-height-radius(100%, 100%, inherit)
+  @include flex(row, normal, end)
+  background-size: cover
+
+.card
+  &--small
+    @include width-height-radius(270px, 100%, 36px)
+    @include flex(column, normal, center)
+    background-color: $white
+    text-align: center
+    padding-bottom: 40px
+    position: relative
+    transition: box-shadow 300ms
+    cursor: pointer
+
+    &__image
+      @include width-height-radius(160px, 150px, 0)
+      @include flex(row, normal, center)
+
+    .image--first
+      background: url("../../assets/icons/small-card_image_11.svg") center no-repeat
+    .image--second
+      background: url("../../assets/icons/small-card_image_22.svg") center no-repeat
+    .image--third
+      background: url("../../assets/icons/small-card_image_33.svg") center no-repeat
+    .image--fourth
+      background: url("../../assets/icons/small-card_image_44.svg") center no-repeat
+
+    h3
+       white-space: nowrap
+
+    p
+      width: 70%
+
+    .decor--none
+      @include width-height-radius(100px, 100px, 30px 0 10px 0)
+      background-color: $orange
+      position: absolute
+      z-index: -5
+      top: 250px
+      left: -40px
+      display: none
+
+  &--small:hover
+    box-shadow: 12px 10px 15px -4px $light-gray
+
+  &--small:hover > .decor--none
+    display: block
+
+
+  &--big
+    @include width-height-radius(315px, 460px, 24px)
+    background-color: $white
+    box-shadow: 15px 5px 15px $light-gray
+    justify-self: center
+    transition: all 300ms
+    cursor: pointer
+
+    .image--first
+      @extend .img
+      background: url("../../assets/big-card_image_1.png") no-repeat center
+    .image--second
+      @extend .img
+      background: url("../../assets/big-card_image_2.png") no-repeat center
+    .image--third
+      @extend .img
+      background: url("../../assets/big-card_image_3.png") no-repeat center
+      background-size: cover
+
+    &__description
+      @include width-height-radius(315px, 29%, 0 0 22px 22px)
+      @include flex(column, center, normal)
+      background: $white
+      grid-row-gap: 10px
+      padding: 0 20px
+
+      &__top
+        @include flex(row, space-between, normal)
+
+      &__bottom
+        display: flex
+        grid-column-gap: 15px
+
+  &--big:hover
+    transform: scale(1.1)
+    box-shadow: 0 10px 25px 5px $light-gray, 10px 10px 25px 5px $light-gray
+
+.trip-card
+  @include width-height-radius(370px, 410px, 20px)
+  padding: 20px 25px 30px
+  background-color: $white
+  box-shadow: 5px 15px 20px 10px $light-gray
+  position: relative
+  left: 80px
+  top: 80px
+
+  &__image > img
+    border-radius: 20px
+    border: 2px solid $black
+    box-shadow: 0 7px 8px -5px $gray
+    margin-bottom: 3vh
+
+
+  &__text
+    display: flex
+    grid-column-gap: 1vw
+    margin: 1vh 0 2vh 0
+
+  &__icons
+    display: flex
+    grid-column-gap: 1vw
+    margin-bottom: 3vh
+
+  &__footer
+    @include flex(row, space-between, normal)
+
+    &__info
+      @include flex(row, normal, end)
+      grid-column-gap: .5vw
+
+  .trip-icon
+    @include width-height-radius(36px, 36px, 50%)
+
+  .icon--first
+    background: url("../../assets/icons/trip-card__leaf.svg") center no-repeat, $dirty-white
+  .icon--second
+    background: url("../../assets/icons/trip-card__map.svg") center no-repeat, $dirty-white
+  .icon--third
+    background: url("../../assets/icons/trip-card__plane.svg") center no-repeat, $dirty-white
+  .icon--fourth
+    background: url("../../assets/icons/trip-card__building.svg") center no-repeat
+  .icon--fifth
+    background: url("../../assets/icons/trip-card__heart.svg") center no-repeat
+
+.small-trip-card
+  @include width-height-radius(260px, 130px, 18px)
+  display: grid
+  grid-template-columns: 1fr 2.5fr
+  padding: 2vh 1.3vw
+  background: $white
+  box-shadow: 5px 10px 10px 5px $light-gray
+  position: relative
+  left: 300px
+  top: -100px
+  z-index: 2
+
+  &__left-side > img
+    @include width-height-radius(50px, 50px, 50%)
+
+  &__right-side
+    .paragraph
+      line-height: 0.8
+
+    .heading-sm
+      margin-top: 1vh
+      text-transform: none
+
+    .heading-xxs
+      margin-top: 1vh
+      margin-bottom: 0.8vh
+
+    .text--violet
+      color: $violet
+
+    .loading-bar__container
+      @include loading-bar(95%, 5px, $light-gray, 3px)
+
+    .loading-bar__progress
+      @include loading-bar(40%, 5px, $violet, 3px)
+
+.text-card
+  @include width-height-radius(504px, 245px, 10px)
+  background-color: $white
+  padding: 30px 35px
+  position: relative
+  top: -5px
+  left: 150px
+  box-shadow: 0 20px 20px 5px $light-gray
+
+  .paragraph
+    width: 90%
+    margin-bottom: 35px
+
+  .heading-xxs
+    color: $dark-violet
+    margin-top: 8px
+
+.company-card
+  @include width-height-radius(170px, 50px, 12px)
+  @include flex(row, center, center)
+  background-color: white
+  -webkit-filter: grayscale(100%) /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%)
+  transition: all 300ms
+  cursor: pointer
+
+.company-card__container
+  @include width-height-radius(150px, 40px, 0)
+
+.company-card:hover
+  transform: scale(1.2)
+  -webkit-filter: grayscale(0%) /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%)
+  box-shadow: 0 20px 20px 5px $light-gray

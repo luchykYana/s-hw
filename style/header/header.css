@@ -1,0 +1,176 @@
+.heading-lg {
+  font-family: Volkhov, Georgia, serif;
+  font-weight: bold;
+  line-height: 1.06;
+  font-size: 5.25em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.heading-md {
+  font-family: Volkhov, Georgia, serif;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 3.125em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.heading-sm {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.25em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.heading-xs {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.245;
+  font-size: 1em;
+  color: #5E6282;
+  text-align: left;
+}
+
+.heading-xxs {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: 1.245;
+  font-size: 0.875em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.main-caption {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.25em;
+  color: #DF6951;
+  text-align: left;
+}
+
+.second-caption {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.125em;
+  color: #5E6282;
+  text-align: left;
+}
+
+.heading-nav, .page-header__select select, .page-header .main-nav {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.0625em;
+  color: #181E4B;
+  text-align: center;
+}
+
+.heading-form {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 2.0625em;
+  color: #5E6282;
+  text-align: center;
+}
+
+.logo-title {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 2.75em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.logo-text {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.245;
+  font-size: 0.8125em;
+  color: #5E6282;
+  text-align: left;
+}
+
+.heading-sm, .heading-md {
+  text-transform: capitalize;
+}
+
+.main-caption, .second-caption {
+  text-transform: uppercase;
+}
+
+.paragraph, .paragraph_list-p {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 2;
+  font-size: 1em;
+  color: #5E6282;
+  text-align: left;
+}
+.paragraph_card-p {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 2;
+  font-size: 1em;
+  color: #5E6282;
+  text-align: center;
+}
+.paragraph_list-p {
+  line-height: 1.2;
+}
+
+.location-paragraph {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 2;
+  font-size: 1.125em;
+  color: #5E6282;
+  text-align: center;
+}
+
+.page-header {
+  width: 100%;
+  height: 2.778vw;
+  border-radius: 0;
+  margin-top: 4.8vh;
+  align-items: center;
+}
+.page-header .main-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+.page-header__content {
+  display: grid;
+  grid-template-columns: 3fr 6fr 2fr 1fr;
+  align-items: center;
+}
+.page-header__nav a {
+  justify-self: center;
+  transition: font-size 100ms, color 100ms;
+  cursor: pointer;
+}
+.page-header__nav a:hover {
+  font-size: 1.2em;
+  color: #F1A501;
+}
+.page-header__buttons {
+  display: flex;
+  justify-self: center;
+  gap: 0.6vw;
+}
+.page-header__select {
+  justify-self: right;
+}
+.page-header__select select {
+  border: none;
+  background: transparent;
+}
+
+/*# sourceMappingURL=header.css.map */

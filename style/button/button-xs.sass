@@ -1,0 +1,18 @@
+@import "../general/vars"
+@import "../general/_typography/typography-xs"
+@import "../general/mixins"
+
+@media only screen and (max-width: 480px)
+  .btn
+    @include fontStyle(normal, .8em, normal, $second-font, $safe-sans-serif, sans-serif, $white, center)
+    @include width-height-radius(120px, 40px, .5em)
+
+    &--play
+      min-width: 90px
+      color: $gray
+
+      &__icon
+        @include width-height-radius(34px, 34px, 50%)
+
+  .auth-btn
+    @include width-height-radius(60px, 25px, .3em)

@@ -1,0 +1,273 @@
+.img, .card--big .image--third, .card--big .image--second, .card--big .image--first {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: end;
+  background-size: cover;
+}
+
+.card--small {
+  width: 270px;
+  height: 100%;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 40px;
+  position: relative;
+  transition: box-shadow 300ms;
+  cursor: pointer;
+}
+.card--small__image {
+  width: 160px;
+  height: 150px;
+  border-radius: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: center;
+}
+.card--small .image--first {
+  background: url("../../assets/icons/small-card_image_11.svg") center no-repeat;
+}
+.card--small .image--second {
+  background: url("../../assets/icons/small-card_image_22.svg") center no-repeat;
+}
+.card--small .image--third {
+  background: url("../../assets/icons/small-card_image_33.svg") center no-repeat;
+}
+.card--small .image--fourth {
+  background: url("../../assets/icons/small-card_image_44.svg") center no-repeat;
+}
+.card--small h3 {
+  white-space: nowrap;
+}
+.card--small p {
+  width: 70%;
+}
+.card--small .decor--none {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px 0 10px 0;
+  background-color: #DF6951;
+  position: absolute;
+  z-index: -5;
+  top: 250px;
+  left: -40px;
+  display: none;
+}
+.card--small:hover {
+  box-shadow: 12px 10px 15px -4px rgba(225, 230, 233, 0.5);
+}
+.card--small:hover > .decor--none {
+  display: block;
+}
+.card--big {
+  width: 315px;
+  height: 460px;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+  box-shadow: 15px 5px 15px rgba(225, 230, 233, 0.5);
+  justify-self: center;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.card--big .image--first {
+  background: url("../../assets/big-card_image_1.png") no-repeat center;
+}
+.card--big .image--second {
+  background: url("../../assets/big-card_image_2.png") no-repeat center;
+}
+.card--big .image--third {
+  background: url("../../assets/big-card_image_3.png") no-repeat center;
+  background-size: cover;
+}
+.card--big__description {
+  width: 315px;
+  height: 29%;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  background: #FFFFFF;
+  grid-row-gap: 10px;
+  padding: 0 20px;
+}
+.card--big__description__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+}
+.card--big__description__bottom {
+  display: flex;
+  grid-column-gap: 15px;
+}
+.card--big:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px 5px rgba(225, 230, 233, 0.5), 10px 10px 25px 5px rgba(225, 230, 233, 0.5);
+}
+
+.trip-card {
+  width: 370px;
+  height: 410px;
+  border-radius: 20px;
+  padding: 20px 25px 30px;
+  background-color: #FFFFFF;
+  box-shadow: 5px 15px 20px 10px rgba(225, 230, 233, 0.5);
+  position: relative;
+  left: 80px;
+  top: 80px;
+}
+.trip-card__image > img {
+  border-radius: 20px;
+  border: 2px solid #212832;
+  box-shadow: 0 7px 8px -5px #686D77;
+  margin-bottom: 3vh;
+}
+.trip-card__text {
+  display: flex;
+  grid-column-gap: 1vw;
+  margin: 1vh 0 2vh 0;
+}
+.trip-card__icons {
+  display: flex;
+  grid-column-gap: 1vw;
+  margin-bottom: 3vh;
+}
+.trip-card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+}
+.trip-card__footer__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: end;
+  grid-column-gap: 0.5vw;
+}
+.trip-card .trip-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.trip-card .icon--first {
+  background: url("../../assets/icons/trip-card__leaf.svg") center no-repeat, #F5F5F5;
+}
+.trip-card .icon--second {
+  background: url("../../assets/icons/trip-card__map.svg") center no-repeat, #F5F5F5;
+}
+.trip-card .icon--third {
+  background: url("../../assets/icons/trip-card__plane.svg") center no-repeat, #F5F5F5;
+}
+.trip-card .icon--fourth {
+  background: url("../../assets/icons/trip-card__building.svg") center no-repeat;
+}
+.trip-card .icon--fifth {
+  background: url("../../assets/icons/trip-card__heart.svg") center no-repeat;
+}
+
+.small-trip-card {
+  width: 260px;
+  height: 130px;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  padding: 2vh 1.3vw;
+  background: #FFFFFF;
+  box-shadow: 5px 10px 10px 5px rgba(225, 230, 233, 0.5);
+  position: relative;
+  left: 300px;
+  top: -100px;
+  z-index: 2;
+}
+.small-trip-card__left-side > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.small-trip-card__right-side .paragraph {
+  line-height: 0.8;
+}
+.small-trip-card__right-side .heading-sm {
+  margin-top: 1vh;
+  text-transform: none;
+}
+.small-trip-card__right-side .heading-xxs {
+  margin-top: 1vh;
+  margin-bottom: 0.8vh;
+}
+.small-trip-card__right-side .text--violet {
+  color: #8A79DF;
+}
+.small-trip-card__right-side .loading-bar__container {
+  width: 95%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: rgba(225, 230, 233, 0.5);
+}
+.small-trip-card__right-side .loading-bar__progress {
+  width: 40%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #8A79DF;
+}
+
+.text-card {
+  width: 504px;
+  height: 245px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  padding: 30px 35px;
+  position: relative;
+  top: -5px;
+  left: 150px;
+  box-shadow: 0 20px 20px 5px rgba(225, 230, 233, 0.5);
+}
+.text-card .paragraph {
+  width: 90%;
+  margin-bottom: 35px;
+}
+.text-card .heading-xxs {
+  color: #5E6282;
+  margin-top: 8px;
+}
+
+.company-card {
+  width: 170px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.company-card__container {
+  width: 150px;
+  height: 40px;
+  border-radius: 0;
+}
+
+.company-card:hover {
+  transform: scale(1.2);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  box-shadow: 0 20px 20px 5px rgba(225, 230, 233, 0.5);
+}
+
+/*# sourceMappingURL=cards.css.map */

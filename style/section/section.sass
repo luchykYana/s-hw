@@ -1,0 +1,141 @@
+@import "section-bg-images"
+@import "../general/mixins"
+@import "../general/vars"
+@import "../animation/plane-animation"
+
+.header
+  @include flex(column, normal, center)
+  grid-row-gap: 1vh
+
+.section-one
+  @include grid(1fr, repeat(2, 1fr))
+  margin-top: 5vh
+  margin-bottom: 15vh
+
+  &__article
+    @include grid(1fr 7fr 3fr 1fr, 1fr)
+    padding-top: 2vh
+    height: 65vh
+
+    .paragraph
+      width: 78%
+
+  &__buttons
+    display: flex
+    grid-column-gap: 3vw
+
+  #plane2
+    position: absolute
+    right: 8vw
+    top: 25vh
+    z-index: -2
+
+  .animation-container
+    width: 55%
+    height: 55%
+    border-radius: 50%
+    position: relative
+    animation: plane linear
+    animation-duration: 3s
+    animation-delay: 3s
+
+.section-two
+  margin-bottom: 20vh
+
+  &__header
+    @extend .header
+    margin-bottom: 10vh
+
+  &__content
+    @include flex(row, space-between, normal)
+
+
+.section-three
+  margin-bottom: 20vh
+
+  &__header
+    @extend .header
+    margin-bottom: 10vh
+
+  &__content
+    @include grid(1fr, 1.5fr 1fr 1.5fr)
+
+.section-fourth
+  @include grid(1fr, repeat(2, 1fr))
+  background: radial-gradient(200px 200px at 970px 180px, $section-gradient, $white) no-repeat
+  padding-left: 3vw
+  margin-bottom: 23vh
+
+  &__left-part
+    .heading-md
+      width: 90%
+      margin-bottom: 5vh
+      margin-top: 1.5vh
+    .heading-xs
+      margin-bottom: .5vh
+
+  &__list
+    width: 70%
+    padding-left: 65px
+
+  &__list li
+    position: relative
+    margin-bottom: 8vh
+
+  &__list li::before
+    display: flex
+    position: absolute
+    left: -65px
+    padding: 13px
+    border-radius: 14px
+
+  &__list li:nth-child(1)::before
+    content: url("../../assets/icons/list-icon_1.svg")
+    background-color: $light-yellow
+
+  &__list li:nth-child(2)::before
+    content: url("../../assets/icons/list-icon_2.svg")
+    background-color: $orange
+
+  &__list li:nth-child(3)::before
+    content: url("../../assets/icons/list-icon_3.svg")
+    background-color: $green
+
+.section-fifth
+  @include grid(1fr, 2fr 3fr)
+  padding-left: 3vw
+  margin-bottom: 20vh
+
+  &__left-side
+    .second-caption
+      margin-bottom: 8px
+
+  .image-circle
+    position: relative
+    left: 115px
+    z-index: 2
+
+
+  .image-circle > img
+    @include width-height-radius(68px, 68px, 50%)
+
+.section-sixth
+  @include grid(1fr, repeat(5, 1fr))
+  margin-bottom: 13vh
+  padding: 20px 0 20px 15px
+  grid-column-gap: 5.5vw
+
+.section-seventh
+  height: 56vh
+  margin-bottom: 18vh
+  background: url("../../assets/background-decor/pluses_two.svg") 96% bottom no-repeat
+
+  &__content
+    @include grid(3fr 1.7fr, 1fr)
+    height: 47vh
+    border-radius: 130px 20px 20px 20px
+
+    .heading-form
+      width: 80%
+      justify-self: center
+      align-self: center

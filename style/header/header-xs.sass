@@ -1,0 +1,34 @@
+@import "../general/vars"
+@import "../general/mixins"
+@import "../general/_typography/typography-xs"
+
+@media only screen and (max-width: 480px)
+  .page-header
+    @include width-height-radius(72%, $header-height-xs, 0)
+    margin: .8vh auto
+    width: 90%
+
+    .main-nav
+      @include grid(1fr, repeat(4, 1fr))
+      grid-area: 2 / 1 / 3 / 4
+
+    &__logo
+      grid-area: 1 / 1
+
+    &__content
+      font-size: .8em
+      display: grid
+      grid-template: 1fr 1fr .8fr / 1fr 1fr .8fr
+      grid-row-gap: 1vh
+
+    &__nav
+      a:hover
+        font-size: 1em
+
+    &__buttons
+      grid-area: 1/2
+      gap: 2vw
+      margin: 0 3vw
+
+    &__select
+      grid-area: 1/3

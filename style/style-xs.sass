@@ -1,0 +1,24 @@
+@import "general/reset"
+@import "general/vars"
+@import "general/_layout/layout-xs"
+@import "general/_typography/typography-xs"
+@import "section/section-xs"
+@import "header/header-xs"
+@import "button/button-xs"
+@import "cards/cards-xs"
+@import "form/form-xs"
+@import "footer/footer-xs"
+
+@media only screen and (max-width: 480px)
+  body
+    width: 87%
+    overflow-x: hidden
+
+@media only screen and (max-width: 576px)
+  body
+    overflow-x: hidden
+    background: radial-gradient(200px 200px at -150px 100px, $body-gradient, $white) no-repeat
+
+  .hero
+    height: 40vh
+    background: none

@@ -1,0 +1,61 @@
+@import "../general/_typography/typography"
+@import "../media-icons/icons"
+
+.footer-full
+  background: radial-gradient(250px 250px at 105% 105%, $body-gradient, $white) no-repeat
+
+.footer
+  display: block
+  margin-bottom: 9vh
+  padding-left: 3.5vw
+
+  &__top
+    display: grid
+    grid-template-columns: 0.8fr 2.3fr 1.2fr
+
+  &__logo
+    &__title
+      @extend .logo-title
+      margin-bottom: 2vh
+
+    &__text
+      @extend .logo-text
+
+  &__links
+    @include flex(row, space-evenly, normal)
+    padding-top: 2vh
+
+    &__group
+      &__title
+        @include fontStyle(bold, 1.3125em, 1.245, $second-font, $safe-sans-serif, sans-serif, $blue, left)
+        margin-bottom: 34px
+
+      .nav-list
+        @include flex(column, normal, normal)
+        grid-row-gap: 12px
+      .nav-list a
+        @include fontStyle(normal, 1em, 1.245, $second-font, $safe-sans-serif, sans-serif, $dark-violet, left)
+      .nav-list a:hover
+        color: $violet
+
+  &__icons
+    padding-top: 2vh
+
+    &__social-networks
+      display: flex
+      grid-column-gap: 25px
+
+    &__shops
+      .second-caption
+        text-transform: none
+        margin: 2vh 0
+
+      .button-icons
+        grid-column-gap: 7px
+
+  &__bottom
+    margin-top: 8vh
+
+    &__text
+      @extend .logo-text
+      text-align: center

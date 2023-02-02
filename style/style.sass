@@ -1,14 +1,17 @@
-@import "reset"
-@import "vars"
-@import "typography"
-@import "button"
-@import "layout"
-@import "header"
-@import "section"
-@import "cards"
+@import "general/reset"
+@import "general/vars"
+@import "general/_typography/typography"
+@import "button/button"
+@import "general/_layout/layout"
+@import "header/header"
+@import "section/section"
+@import "cards/cards"
+@import "form/form"
+@import "footer/footer"
 
 body
-  background: url("../assets/background-decor/body-decor1.svg") right top/56% 25% no-repeat, radial-gradient(400px 400px at -250px 200px, $body-gradient, $white) no-repeat
+  overflow-x: hidden
+  background: url("../assets/background-decor/body-decor1.svg") right top/56% 16% no-repeat, radial-gradient(400px 400px at -250px 200px, $body-gradient, $white) no-repeat
 
 .hero
   height: 78vh

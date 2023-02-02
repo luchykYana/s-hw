@@ -1,0 +1,8 @@
+@import "../vars"
+
+@media only screen and (max-width: 480px)
+  .grid-container
+    $flap: minmax(16px, 1fr)
+    $content: minmax($min-width-xs, $max-width-xs)
+    display: grid
+    grid-template-columns: $flap $content $flap

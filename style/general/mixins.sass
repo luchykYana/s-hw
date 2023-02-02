@@ -1,0 +1,29 @@
+@mixin fontStyle($weight, $size, $line, $font, $safe-font, $font-family, $color, $align)
+  font-family: $font, $safe-font, $font-family
+  font-weight: $weight
+  line-height: $line
+  font-size: $size
+  color: $color
+  text-align: $align
+
+@mixin flex($direction, $justify, $align)
+  display: flex
+  flex-direction: $direction
+  justify-content: $justify
+  align-items: $align
+
+@mixin grid($row, $column)
+  display: grid
+  grid-template: $row / $column
+
+@mixin shadow($color)
+  box-shadow: 0 20px 60px $color
+
+@mixin width-height-radius($width, $height, $radius)
+  width: $width
+  height: $height
+  border-radius: $radius
+
+@mixin loading-bar($width, $height, $color, $radius)
+    @include width-height-radius($width, $height, $radius)
+    background-color: $color

@@ -1,0 +1,14 @@
+@import "../general/vars"
+@import "../general/mixins"
+
+@media only screen and (max-width: 480px)
+  .form
+    &--subscribe-info
+      grid-column-gap: 15px
+
+      input
+        @include width-height-radius(20vw, 40px, .5em)
+        padding: 0 10%
+
+      .email-input::placeholder
+        font-size: 0.7em

@@ -1,0 +1,44 @@
+@import "../media-icons/icons"
+@import "../general/_typography/typography-xs"
+
+@media only screen and (max-width: 480px)
+  .footer
+    margin: 0 auto 3vh
+    width: 90%
+
+    &__top
+      @include flex(column, normal, center)
+
+    &__logo
+      @include flex(row, space-between, center)
+      &__title
+        @extend .logo-title
+
+      &__text
+        @extend .logo-text
+        width: 70%
+
+    &__links
+      @include flex(row, space-between, center)
+      grid-column-gap: 30px
+      margin-bottom: 10px
+
+      &__group
+        &__title
+          display: none
+
+    &__icons
+      &__social-networks
+        @include flex(row, center, normal)
+        grid-column-gap: 30px
+
+      &__shops
+        .second-caption
+          text-align: center
+
+    &__bottom
+      margin-top: 4vh
+
+      &__text
+        @extend .logo-text
+        text-align: center

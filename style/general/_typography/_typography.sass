@@ -1,0 +1,54 @@
+@import "../vars"
+@import "../mixins"
+
+.heading-lg
+  @include fontStyle(bold, 5.25em, 1.06, $first-font, $safe-serif, serif, $blue, left)
+
+.heading-md
+  @include fontStyle(bold, 3.125em, normal, $first-font, $safe-serif, serif, $blue, left)
+
+.heading-sm
+  @include fontStyle(lighter, 1.25em, normal, $second-font, $safe-sans-serif, sans-serif, $blue, left)
+
+.heading-xs
+  @include fontStyle(bold, 1em, 1.245, $second-font, $safe-sans-serif, sans-serif, $dark-violet, left)
+
+.heading-xxs
+  @include fontStyle(lighter, 0.875em, 1.245, $second-font, $safe-sans-serif, sans-serif, $blue, left)
+
+.main-caption
+  @include fontStyle(lighter, 1.25em, normal, $second-font, $safe-sans-serif, sans-serif, $orange, left)
+
+.second-caption
+  @include fontStyle(lighter, 1.125em, normal, $second-font, $safe-sans-serif, sans-serif, $dark-violet, left)
+
+.heading-nav
+  @include fontStyle(lighter, 1.0625em, normal, $second-font, $safe-sans-serif, sans-serif, $blue, center)
+
+.heading-form
+  @include fontStyle(lighter, 2.0625em, normal, $second-font, $safe-sans-serif, sans-serif, $dark-violet, center)
+
+.logo-title
+  @include fontStyle(normal, 2.75em, normal, $second-font, $safe-sans-serif, sans-serif, $blue, left)
+
+.logo-text
+  @include fontStyle(normal, 0.8125em, 1.245, $second-font, $safe-sans-serif, sans-serif, $dark-violet, left)
+
+.heading-sm, .heading-md
+  text-transform: capitalize
+
+.main-caption, .second-caption
+  text-transform: uppercase
+
+.paragraph
+  @include fontStyle(normal, 1em, 2, $second-font, $safe-sans-serif, sans-serif, $dark-violet, left)
+
+  &_card-p
+    @include fontStyle(normal, 1em, 2, $second-font, $safe-sans-serif, sans-serif, $dark-violet, center)
+
+  &_list-p
+    @extend .paragraph
+    line-height: 1.2
+
+.location-paragraph
+  @include fontStyle(normal, 1.125em, 2, $second-font, $safe-sans-serif, sans-serif, $dark-violet, center)

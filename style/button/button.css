@@ -1,0 +1,206 @@
+.heading-lg {
+  font-family: Volkhov, Georgia, serif;
+  font-weight: bold;
+  line-height: 1.06;
+  font-size: 5.25em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.heading-md {
+  font-family: Volkhov, Georgia, serif;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 3.125em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.heading-sm {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.25em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.heading-xs {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.245;
+  font-size: 1em;
+  color: #5E6282;
+  text-align: left;
+}
+
+.heading-xxs {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: 1.245;
+  font-size: 0.875em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.main-caption {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.25em;
+  color: #DF6951;
+  text-align: left;
+}
+
+.second-caption {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.125em;
+  color: #5E6282;
+  text-align: left;
+}
+
+.heading-nav, .auth-btn {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 1.0625em;
+  color: #181E4B;
+  text-align: center;
+}
+
+.heading-form {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: normal;
+  font-size: 2.0625em;
+  color: #5E6282;
+  text-align: center;
+}
+
+.logo-title {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 2.75em;
+  color: #181E4B;
+  text-align: left;
+}
+
+.logo-text {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.245;
+  font-size: 0.8125em;
+  color: #5E6282;
+  text-align: left;
+}
+
+.heading-sm, .heading-md {
+  text-transform: capitalize;
+}
+
+.main-caption, .second-caption {
+  text-transform: uppercase;
+}
+
+.paragraph, .paragraph_list-p {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 2;
+  font-size: 1em;
+  color: #5E6282;
+  text-align: left;
+}
+.paragraph_card-p {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 2;
+  font-size: 1em;
+  color: #5E6282;
+  text-align: center;
+}
+.paragraph_list-p {
+  line-height: 1.2;
+}
+
+.location-paragraph {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 2;
+  font-size: 1.125em;
+  color: #5E6282;
+  text-align: center;
+}
+
+.btn {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 1.125em;
+  color: #FFFFFF;
+  text-align: center;
+  width: 170px;
+  height: 60px;
+  border-radius: 0.5em;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  transition: color 300ms, background-color 300ms, border 300ms, background 300ms;
+  cursor: pointer;
+}
+.btn--info {
+  background: #F1A501;
+  box-shadow: 0 20px 60px #ffdcae;
+}
+.btn--info:hover {
+  background-color: transparent;
+  border: 1px solid #F1A501;
+  color: #F1A501;
+}
+.btn--form {
+  background: linear-gradient(#FF946D, #FF7D68);
+}
+.btn--form:hover {
+  background: #FFFFFF;
+  border: 1px solid #FF7D68;
+  color: #FF7D68;
+}
+.btn--play {
+  min-width: 180px;
+  background: #FFFFFF;
+  color: #686D77;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn--play__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  box-shadow: 0 20px 60px #DF6951;
+  background: url("../../assets/icons/play-btn.svg") 54% 50%/25% no-repeat #DF6951;
+  display: flex;
+}
+.btn--play:hover {
+  background-color: #DF6951;
+  color: #FFFFFF;
+}
+
+.auth-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 3em;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  background-color: transparent;
+  transition: 300ms border;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  border: 1px solid #212832;
+}
+
+/*# sourceMappingURL=button.css.map */

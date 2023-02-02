@@ -11,6 +11,7 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-xs.css">
 </head>
 <body>
 
@@ -58,7 +59,7 @@
         </article>
 
         <div>
-            <img src="assets/plane.svg" alt="plane" id="plane1">
+            <div class="animation-container"><img src="assets/plane.svg" alt="plane" id="plane1"></div>
             <img src="assets/plane.svg" alt="plane" id="plane2">
         </div>
 
@@ -75,28 +76,28 @@
             <article class="card--small">
                 <div class="card--small__image image--first"></div>
                 <h3 class="heading-sm">Calculated weather</h3>
-                <p class="paragraph">Built Wicket longer admire do barton vanity itself do in it.</p>
+                <p class="paragraph_card-p">Built Wicket longer admire do barton vanity itself do in it.</p>
                 <div class="decor--none"></div>
             </article>
 
             <article class="card--small">
                 <div class="card--small__image image--second"></div>
                 <h3 class="heading-sm">Best flights</h3>
-                <p class="paragraph">Engrossed listening. Park gate sell they west hard for the.</p>
+                <p class="paragraph_card-p">Engrossed listening. Park gate sell they west hard for the.</p>
                 <div class="decor--none"></div>
             </article>
 
             <article class="card--small">
                 <div class="card--small__image image--third"></div>
                 <h3 class="heading-sm">Local events</h3>
-                <p class="paragraph">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                <p class="paragraph_card-p">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
                 <div class="decor--none"></div>
             </article>
 
             <article class="card--small">
                 <div class="card--small__image image--fourth"></div>
                 <h3 class="heading-sm">Customization</h3>
-                <p class="paragraph">We deliver outsourced aviation services for military customers</p>
+                <p class="paragraph_card-p">We deliver outsourced aviation services for military customers</p>
                 <div class="decor--none"></div>
             </article>
 
@@ -167,7 +168,6 @@
     </section>
 
     <section class="grid-content section-fourth">
-
         <div class="section-fourth__left-part">
             <p class="second-caption">Easy and fast</p>
             <h2 class="heading-md">Book your next trip in 3 easy steps</h2>
@@ -180,14 +180,14 @@
                 </li>
 
                 <li>
-                    <h4 class="heading-xs">Choose destination</h4>
+                    <h4 class="heading-xs">Make Payment</h4>
                     <p class="paragraph_list-p">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
                     </p>
                 </li>
 
                 <li>
-                    <h4 class="heading-xs">Choose destination</h4>
+                    <h4 class="heading-xs">Reach Airport on Selected Date</h4>
                     <p class="paragraph_list-p">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
                     </p>
@@ -195,13 +195,187 @@
             </ul>
         </div>
 
-        <div class="section-fourth__right-part"></div>
+        <div class="section-fourth__right-part">
+            <div class="trip-card">
+                <div class="trip-card__image">
+                    <img src="assets/greece.jpg" alt="greece">
+                </div>
 
+                <div class="trip-card__description">
+                    <h4 class="heading-sm">Trip to Greece</h4>
+                    <div class="trip-card__text">
+                        <p class="paragraph">14-29 June |</p>
+                        <p class="paragraph">by Robbin Joseph</p>
+                    </div>
+
+                    <div class="trip-card__icons">
+                        <div class="trip-icon icon--first"></div>
+                        <div class="trip-icon icon--second"></div>
+                        <div class="trip-icon icon--third"></div>
+                    </div>
+
+                    <div class="trip-card__footer">
+                        <div class="trip-card__footer__info">
+                            <div class="trip-icon icon--fourth"></div>
+                            <p class="paragraph">24 people going</p>
+                        </div>
+                        <div class="trip-icon icon--fifth"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="small-trip-card">
+                <div class="small-trip-card__left-side">
+                    <img src="assets/small-trip-card__circle-image.png" alt="greece temple">
+                </div>
+                <div class="small-trip-card__right-side">
+                    <p class="paragraph">Ongoing</p>
+                    <h4 class="heading-sm">Trip to rome</h4>
+                    <h4 class="heading-xxs"><span class="text--violet">40%</span> completed</h4>
+                    <div class="loading-bar__container">
+                        <div class="loading-bar__progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-content section-fifth">
+        <div class="section-fifth__left-side">
+            <p class="second-caption">Testimonials</p>
+            <h2 class="heading-md">What people say about Us.</h2>
+        </div>
+
+        <div class="section-fifth__right-side">
+            <div class="image-circle">
+                <img src="assets/text-card__image-circle.png" alt="man">
+            </div>
+            <div class="text-card">
+                <p class="paragraph">“On the Windows talking painted pasture yet its express parties use. Sure last upon
+                    he same as knew next. Of believed or diverted no.”</p>
+                <h3 class="heading-xs">Mike Taylor</h3>
+                <h4 class="heading-xxs">Lahore, Pakistan</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-content section-sixth">
+        <div class="company-card">
+            <div class="company-card__container first-company"></div>
+        </div>
+        <div class="company-card">
+            <div class="company-card__container second-company"></div>
+        </div>
+        <div class="company-card">
+            <div class="company-card__container third-company"></div>
+        </div>
+        <div class="company-card">
+            <div class="company-card__container fourth-company"></div>
+        </div>
+        <div class="company-card">
+            <div class="company-card__container fifth-company"></div>
+        </div>
+    </section>
+
+    <section class="grid-content-full grid-container section-seventh">
+        <div class="grid-content section-seventh__content">
+            <h2 class="heading-form">
+                Subscribe to get information, latest news and other interesting offers about Cobham
+            </h2>
+
+            <form action="#" class="form--subscribe-info" autocomplete="on">
+                <input type="email" name="email" placeholder="Your email" class="email-input" required>
+                <button class="btn btn--form" type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="section-seventh__icon"></div>
     </section>
 </main>
 
-
 <footer class="grid-container">
+    <div class="grid-content-full grid-container footer-full">
+        <div class="grid-content footer">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <div class="footer__logo__title">Jadoo.</div>
+                    <div class="footer__logo__text">Book your trip in minute, get full control for much longer.</div>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__links__group">
+                        <div class="footer__links__group__title">Company</div>
+
+                        <ul class="nav-list">
+                            <li class="footer__links__group__item">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="footer__links__group__item">
+                                <a href="#">Careers</a>
+                            </li>
+                            <li class="footer__links__group__item">
+                                <a href="#">Mobile</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__links__group">
+                        <div class="footer__links__group__title">Contact</div>
+                        <ul class="nav-list">
+                            <li class="footer__links__group__item">
+                                <a href="#">Help/FAQ</a>
+                            </li>
+                            <li class="footer__links__group__item">
+                                <a href="#">Press</a>
+                            </li>
+                            <li class="footer__links__group__item">
+                                <a href="#">Affilates</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__links__group">
+                        <div class="footer__links__group__title">More</div>
+                        <ul class="nav-list">
+                            <li class="footer__links__group__item">
+                                <a href="#">Airlinefees</a>
+                            </li>
+                            <li class="footer__links__group__item">
+                                <a href="#">Airline</a>
+                            </li>
+                            <li class="footer__links__group__item">
+                                <a href="#">Low fare tips</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__icons">
+                    <div class="footer__icons__social-networks">
+                        <button class="icon icon_facebook"
+                                onclick="window.open('https://uk-ua.facebook.com/', '_blank')"></button>
+                        <button class="icon icon_instagram"
+                                onclick="window.open('https://www.instagram.com/', '_blank')"></button>
+                        <button class="icon icon_twitter"
+                                onclick="window.open('https://twitter.com/?lang=uk', '_blank')"></button>
+                    </div>
+
+                    <div class="footer__icons__shops">
+                        <p class="second-caption">Discover our solutions</p>
+                        <div class="button-icons">
+                            <button class="button-icon button-icon_google-play"
+                                    onclick="window.open('https://play.google.com/store/games?hl=uk', '_blank')"></button>
+                            <button class="button-icon button-icon_apple-store"
+                                    onclick="window.open('https://www.apple.com/ua/app-store/', '_blank')"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom__text">All rights reserved@jadoo.co</div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 </body>
