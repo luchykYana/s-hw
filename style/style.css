@@ -344,7 +344,7 @@ a {
   height: 52px;
   border-radius: 50%;
   box-shadow: 0 20px 60px #DF6951;
-  background: url("../../assets/icons/play-btn.svg") 54% 50%/25% no-repeat #DF6951;
+  background: url("/assets/icons/play-btn.svg") 54% 50%/25% no-repeat #DF6951;
   display: flex;
 }
 .btn--play:hover {
@@ -557,39 +557,39 @@ a {
 }
 
 .section-two {
-  background: url("../../assets/background-decor/pluses_one.svg") top right no-repeat;
+  background: url("/assets/background-decor/pluses_one.svg") top right no-repeat;
 }
 
 .section-three {
-  background: url("../../assets/background-decor/spring.svg") right 85% no-repeat;
+  background: url("/assets/background-decor/spring.svg") right 85% no-repeat;
 }
 
 .section-sixth .first-company {
-  background: url("../../assets/companies/first-company.png") center no-repeat;
+  background: url("/assets/companies/first-company.png") center no-repeat;
   background-size: contain;
 }
 .section-sixth .second-company {
-  background: url("../../assets/companies/second-company.png") center no-repeat;
+  background: url("/assets/companies/second-company.png") center no-repeat;
   background-size: contain;
 }
 .section-sixth .third-company {
-  background: url("../../assets/companies/third-company.png") center no-repeat;
+  background: url("/assets/companies/third-company.png") center no-repeat;
   background-size: contain;
 }
 .section-sixth .fourth-company {
-  background: url("../../assets/companies/fourth-company.png") center no-repeat;
+  background: url("/assets/companies/fourth-company.png") center no-repeat;
   background-size: contain;
 }
 .section-sixth .fifth-company {
-  background: url("../../assets/companies/fifth-company.png") center no-repeat;
+  background: url("/assets/companies/fifth-company.png") center no-repeat;
   background-size: 80%;
 }
 
 .section-seventh {
-  background: url("../../assets/background-decor/pluses_two.svg") 96% bottom no-repeat;
+  background: url("/assets/background-decor/pluses_two.svg") 96% bottom no-repeat;
 }
 .section-seventh__content {
-  background: url("../../assets/background-decor/circles_one.svg") -80px 30px no-repeat, url("../../assets/background-decor/circles_two.svg") 100% -30px no-repeat, rgba(223, 215, 249, 0.25);
+  background: url("/assets/background-decor/circles_one.svg") -80px 30px no-repeat, url("/assets/background-decor/circles_two.svg") 100% -30px no-repeat, rgba(223, 215, 249, 0.25);
 }
 
 @keyframes plane {
@@ -731,15 +731,15 @@ a {
   border-radius: 14px;
 }
 .section-fourth__list li:nth-child(1)::before {
-  content: url("../../assets/icons/list-icon_1.svg");
+  content: url("/assets/icons/list-icon_1.svg");
   background-color: #F0BB1F;
 }
 .section-fourth__list li:nth-child(2)::before {
-  content: url("../../assets/icons/list-icon_2.svg");
+  content: url("/assets/icons/list-icon_2.svg");
   background-color: #DF6951;
 }
 .section-fourth__list li:nth-child(3)::before {
-  content: url("../../assets/icons/list-icon_3.svg");
+  content: url("/assets/icons/list-icon_3.svg");
   background-color: #006380;
 }
 
@@ -774,7 +774,7 @@ a {
 .section-seventh {
   height: 56vh;
   margin-bottom: 18vh;
-  background: url("../../assets/background-decor/pluses_two.svg") 96% bottom no-repeat;
+  background: url("/assets/background-decor/pluses_two.svg") 96% bottom no-repeat;
 }
 .section-seventh__content {
   display: grid;
@@ -824,16 +824,16 @@ a {
   align-items: center;
 }
 .card--small .image--first {
-  background: url("../../assets/icons/small-card_image_11.svg") center no-repeat;
+  background: url("/assets/icons/small-card_image_11.svg") center no-repeat;
 }
 .card--small .image--second {
-  background: url("../../assets/icons/small-card_image_22.svg") center no-repeat;
+  background: url("/assets/icons/small-card_image_22.svg") center no-repeat;
 }
 .card--small .image--third {
-  background: url("../../assets/icons/small-card_image_33.svg") center no-repeat;
+  background: url("/assets/icons/small-card_image_33.svg") center no-repeat;
 }
 .card--small .image--fourth {
-  background: url("../../assets/icons/small-card_image_44.svg") center no-repeat;
+  background: url("/assets/icons/small-card_image_44.svg") center no-repeat;
 }
 .card--small h3 {
   white-space: nowrap;
@@ -869,13 +869,13 @@ a {
   cursor: pointer;
 }
 .card--big .image--first {
-  background: url("../../assets/big-card_image_1.png") no-repeat center;
+  background: url("/assets/big-card_image_1.png") no-repeat center;
 }
 .card--big .image--second {
-  background: url("../../assets/big-card_image_2.png") no-repeat center;
+  background: url("/assets/big-card_image_2.png") no-repeat center;
 }
 .card--big .image--third {
-  background: url("../../assets/big-card_image_3.png") no-repeat center;
+  background: url("/assets/big-card_image_3.png") no-repeat center;
   background-size: cover;
 }
 .card--big__description {
@@ -951,19 +951,19 @@ a {
   border-radius: 50%;
 }
 .trip-card .icon--first {
-  background: url("../../assets/icons/trip-card__leaf.svg") center no-repeat, #F5F5F5;
+  background: url("/assets/icons/trip-card__leaf.svg") center no-repeat, #F5F5F5;
 }
 .trip-card .icon--second {
-  background: url("../../assets/icons/trip-card__map.svg") center no-repeat, #F5F5F5;
+  background: url("/assets/icons/trip-card__map.svg") center no-repeat, #F5F5F5;
 }
 .trip-card .icon--third {
-  background: url("../../assets/icons/trip-card__plane.svg") center no-repeat, #F5F5F5;
+  background: url("/assets/icons/trip-card__plane.svg") center no-repeat, #F5F5F5;
 }
 .trip-card .icon--fourth {
-  background: url("../../assets/icons/trip-card__building.svg") center no-repeat;
+  background: url("/assets/icons/trip-card__building.svg") center no-repeat;
 }
 .trip-card .icon--fifth {
-  background: url("../../assets/icons/trip-card__heart.svg") center no-repeat;
+  background: url("/assets/icons/trip-card__heart.svg") center no-repeat;
 }
 
 .small-trip-card {
@@ -1076,7 +1076,7 @@ a {
   padding: 0 5%;
 }
 .form--subscribe-info .email-input {
-  background: url("../../assets/icons/letter.svg") 7% 48% no-repeat, #FFFFFF;
+  background: url("/assets/icons/letter.svg") 7% 48% no-repeat, #FFFFFF;
 }
 .form--subscribe-info .email-input::placeholder {
   color: #39425D;
@@ -1246,26 +1246,26 @@ a {
 }
 
 .icon_facebook {
-  background: url("../../assets/icons/facebook.svg") no-repeat center;
+  background: url("/assets/icons/facebook.svg") no-repeat center;
   background-size: 25%;
 }
 
 .icon_twitter {
-  background: url("../../assets/icons/twitter.svg") no-repeat center;
+  background: url("/assets/icons/twitter.svg") no-repeat center;
   background-size: 50%;
 }
 
 .icon_instagram {
-  background: url("../../assets/icons/instagram.svg") no-repeat center/60%, conic-gradient(from 180deg, #80A4CE, #F289AA, #C68BF0, #D164DA, #C963E8, #BFC2E8, #FFC999, #BAD0F1, #FFFFFF) center no-repeat;
+  background: url("/assets/icons/instagram.svg") no-repeat center/60%, conic-gradient(from 180deg, #80A4CE, #F289AA, #C68BF0, #D164DA, #C963E8, #BFC2E8, #FFC999, #BAD0F1, #FFFFFF) center no-repeat;
 }
 
 .button-icon_apple-store {
-  background: #000 url("../../assets/icons/icon_play-store.svg") no-repeat center;
+  background: #000 url("/assets/icons/icon_play-store.svg") no-repeat center;
   background-size: contain;
 }
 
 .button-icon_google-play {
-  background: #000 url("../../assets/icons/icon_google-play.svg") no-repeat center;
+  background: #000 url("/assets/icons/icon_google-play.svg") no-repeat center;
   background-size: contain;
 }
 
