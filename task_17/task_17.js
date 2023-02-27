@@ -22,8 +22,8 @@ const sort = (mas) => {
 const sortLodash = (mas) => {
     const sortedMas = _.sortBy(mas);
     const result = _.times(sortedMas.length, _.constant(0));
-    let i = 0;
-    let j = sortedMas.length - 1;
+    let i = 0, j = sortedMas.length - 1;
+
     _.forEach(sortedMas, (value, index) => {
         if (index % 2 === 0) {
             result[i++] = value;
@@ -31,6 +31,7 @@ const sortLodash = (mas) => {
             result[j--] = value;
         }
     });
+
     return result;
 }
 
