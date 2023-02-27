@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 // Задача4
 // Напишіть функцію, яка отримує масив цілих чисел і повертає масив
 // середніх значень кожного цілого числа та його послідовника, якщо він є.
@@ -12,4 +14,13 @@ const averages = (arr) => arr.reduce((previousValue, currentValue, index, array)
     return previousValue;
 }, []);
 
+const averagesLodash = (arr) => {
+    return _.chain(arr)
+        .zipWith(_.drop(arr), (a, b) => (a + b) / 2)
+        .dropRight()
+        .value();
+};
+
 console.log(averages([1, 3, 5, 1, -10]));
+
+console.log(averagesLodash([1, 3, 5, 1, -10]));

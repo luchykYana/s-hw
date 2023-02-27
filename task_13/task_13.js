@@ -36,7 +36,14 @@ const modifyString = (str) => {
     return newStr;
 }
 
-const originalString = "Це текст з посиланням на https://example.com та емейлом user@example.com та цифрами 12345 та 12.";
-const modifiedString = modifyString(originalString);
+const form = document.getElementById('form');
+const text = document.getElementsByClassName('text')[0];
 
-console.log(modifiedString);
+form.onsubmit = (ev) => {
+    ev.preventDefault();
+
+    const str = form.elements[0].value;
+    text.innerText = modifyString(str);
+
+}
+// const originalString = "Це текст з посиланням на https://example.com та емейлом user@example.com та цифрами 12345 та 12.";

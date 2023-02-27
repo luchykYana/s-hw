@@ -13,4 +13,63 @@
 // розміру отвору, не строго менше).
 // Цегла не можна класти під неортогональним кутом.
 
+const doesBrickFit = ({a, b, c, w, h}) => {
+    // Перевіряємо, чи можна помістити цеглу в отвір по довжині
+    if (a <= w && b <= h) {
+        return true;
+    }
 
+    // Перевіряємо, чи можна помістити цеглу в отвір по ширині
+    if (a <= h && b <= w) {
+        return true;
+    }
+
+    // Перевіряємо, чи можна помістити цеглу в отвір по глибині
+    if (b <= w && c <= h) {
+        return true;
+    }
+
+    // Перевіряємо, чи можна помістити цеглу в отвір по висоті
+    if (b <= h && c <= w) {
+        return true;
+    }
+
+    // Перевіряємо, чи можна помістити цеглу в отвір по ширині і глибині
+    if (a <= w && c <= h) {
+        return true;
+    }
+
+    // Перевіряємо, чи можна помістити цеглу в отвір по ширині і висоті
+    if (a <= h && c <= w) {
+        return true;
+    }
+
+    // Якщо жодна з перевірок не пройшла, повертаємо false
+    return false;
+}
+
+const form = document.getElementById('form');
+
+// Блокування сабміту по ентеру
+form.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+    }
+});
+
+form.onsubmit = (ev) => {
+    ev.preventDefault();
+    const info = {}
+
+    for (const elem of form.elements) {
+        if(elem.name !== '') {
+            info[elem.name] = +elem.value
+        }
+    }
+
+    if(doesBrickFit(info)) {
+        alert("Цегла помістилася у отвір!")
+    } else {
+        alert("Цегла НЕ помістилася у отвір!")
+    }
+}

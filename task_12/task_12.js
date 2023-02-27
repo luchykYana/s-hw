@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 // Задача12
 // З елементів масиву a, що складається з 2n елементів, отримати масиви b
 // і c наступним чином: вибрати в масиві a два найбільш близькі за значенням
@@ -12,12 +14,29 @@ const splitArray = (a) => (
         : [[], []]
 );
 
-
 const a = [1, 11, 2, 9, 10, 4, 3, 8];
 const [b, c] = splitArray(a);
 
 console.log(b);
 console.log(c);
+
+const splitArrayLodash = (a) => {
+    if (a.length % 2 !== 0) {
+        throw new Error("Масив має непарну кількість елементів");
+    }
+
+    const sortedArr = _.sortBy(a);
+    const b = _.filter(sortedArr, (val, index) => index % 2 === 0);
+    const c = _.difference(sortedArr, b);
+
+    return [b, c];
+};
+
+const a1 = [1, 11, 2, 9, 10, 4, 3, 8];
+const [b1, c1] = splitArrayLodash(a1);
+
+console.log(b1);
+console.log(c1);
 
 // Можна також читабельнішим варіантом
 const splitArray2 = (a) => {
@@ -33,7 +52,7 @@ const splitArray2 = (a) => {
     return [b, c];
 }
 
-const z = [1, 11, 2, 9, 10, 4, 3, 8, 0];
+const z = [1, 11, 2, 9, 10, 4, 3, 8];
 const [x, y] = splitArray2(z);
 
 console.log(x);

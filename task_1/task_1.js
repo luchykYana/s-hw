@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 // Задача1
 // Ви повинні реалізувати функцію, яка повертає різницю між
 // найбільшим та найменшим значенням у списку , отриманому як аргумент
@@ -8,7 +10,12 @@
 // arr([16]) => 0
 
 const findDifference = arr => arr.length <= 1 ? 0 : Math.max(...arr) - Math.min(...arr);
+const findDifferenceLodash = arr => _.size(arr) <= 1 ? 0 : _.max(arr) - _.min(arr);
 
 console.log(findDifference([1, 2, 3, -4]));
 console.log(findDifference([16]));
 console.log(findDifference([4, -9, 2, 1, 45, -4, 0, 34]));
+
+console.log(findDifferenceLodash([1, 2, 3, -4]));
+console.log(findDifferenceLodash([16]));
+console.log(findDifferenceLodash([4, -9, 2, 1, 45, -4, 0, 34]));
