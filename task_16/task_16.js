@@ -29,15 +29,15 @@ const generatePassword = () => {
     temp = 20 - length > 5 ? temp : 20 - length;
 
     for (let i = 0; i < temp; i++) {
-        numbers.push(getRandomInt(0, 9))
+        numbers.push(getRandomInt(0, 9));
     }
     length += temp;
 
     if(20 - length > 0) {
-        temp = length > 6 ? getRandomInt(0, 20 - length) : getRandomInt(6 - length, 20 - length)
+        temp = length > 6 ? getRandomInt(0, 20 - length) : getRandomInt(6 - length, 20 - length);
 
         for (let i = 0; i < temp; i++) {
-            letters.push(getRandomLower())
+            letters.push(getRandomLower());
         }
     }
 
@@ -49,7 +49,7 @@ const generatePassword = () => {
         }
     }
 
-    return password.join('')
+    return password.join('');
 }
 
 console.log(generatePassword());

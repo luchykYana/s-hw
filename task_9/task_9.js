@@ -59,17 +59,17 @@ form.addEventListener('keydown', function(event) {
 
 form.onsubmit = (ev) => {
     ev.preventDefault();
-    const info = {}
+    const info = {};
 
     for (const elem of form.elements) {
         if(elem.name !== '') {
-            info[elem.name] = +elem.value
+            info[elem.name] = +elem.value;
         }
     }
 
     if(doesBrickFit(info)) {
-        alert("Цегла помістилася у отвір!")
+        alert("Цегла помістилася у отвір!");
     } else {
-        alert("Цегла НЕ помістилася у отвір!")
+        alert("Цегла НЕ помістилася у отвір!");
     }
 }
