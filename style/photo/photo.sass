@@ -1,0 +1,46 @@
+@import "../general/mixins"
+@import "../general/vars"
+
+.photo
+  position: relative
+
+  &--first
+    @include photo("../assets/section-one__photo.jpg", 37vw, 500px, 20% 0)
+
+    &__shadow
+      @include border(3px solid $brown, 37vw, 500px, 20% 0)
+      @include position(absolute, 30px, 30px, -1)
+
+  &--second
+    @include photo("../assets/section-three__photo.jpg", 34vw, 550px, 20% 0)
+
+    &__shadow
+      @include border(3px solid $brown, 34vw, 550px, 20% 0)
+      @include position(absolute, -30px, -30px, -1)
+
+  &--third
+    @include photo("../assets/section-four__photo.jpg", 34vw, 550px, 20% 0)
+
+    &__shadow
+      @include border(3px solid $brown, 34vw, 550px, 20% 0)
+      @include position(absolute, 30px, 30px, -1)
+
+  &--fourth
+    @include photo("../assets/section-seven__photo-one.jpg", 30vw, 290px, 20% 0)
+
+    &__shadow
+      @include border(3px solid $brown, 30vw, 290px, 20% 0)
+      @include position(absolute, 15px, 20px, -1)
+
+  &--fifth
+    @include photo("../assets/section-seven__photo-two.jpg", 30vw, 290px, 20% 0)
+
+    &__shadow
+      @include border(3px solid $brown, 30vw, 290px, 20% 0)
+      @include position(absolute, 15px, 20px, -1)
+
+  &--person-one
+    @include photo("../assets/section-six__person-one.jpg", 110px, 120px, 20% 0)
+
+  &--person-two
+    @include photo("../assets/section-six__person-two.jpg", 110px, 120px, 20% 0)

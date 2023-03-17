@@ -1,0 +1,14 @@
+@import "../general/mixins"
+@import "../general/vars"
+
+.progress
+  &-container
+    @include width-height-radius(100%, 5px, 0)
+    @include position(sticky, $header-height, 0, 10)
+    background-color: $light-gray
+    margin-bottom: 60px
+    overflow-x: hidden
+
+  &-bar
+    @include width-height-radius(0, 5px, 0)
+    background-color: $green

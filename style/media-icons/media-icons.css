@@ -1,0 +1,33 @@
+.icon {
+  padding: 25px;
+  border-radius: 2em;
+  background-color: #646464;
+  transition: background-color 200ms;
+  box-shadow: 0 0 15px 5px #F8F8F8;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #37806B;
+}
+
+.icon_facebook {
+  background: url("/assets/facebook.svg") no-repeat center;
+  background-size: 25%;
+}
+
+.icon_twitter {
+  background: url("/assets/twitter.svg") no-repeat center;
+  background-size: 50%;
+}
+
+.icon_instagram {
+  background: url("/assets/instagram.svg") no-repeat center/60%;
+}
+
+.icon_linked-in {
+  background: url("/assets/linked-in.svg") no-repeat center;
+  background-size: 50%;
+}
+
+/*# sourceMappingURL=media-icons.css.map */

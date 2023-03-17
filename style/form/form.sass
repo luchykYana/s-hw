@@ -1,0 +1,14 @@
+@import "../general/mixins"
+@import "../general/vars"
+
+.form
+  &__input
+    @include border(1px solid transparent, 16.5vw, 50px, 1.5em 0)
+    @extend .paragraph
+    background-color: $light-gray
+    padding: 0 50px
+    margin: 25px 25px
+
+    &--long
+      @extend .form__input
+      width: 43vw

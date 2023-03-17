@@ -1,0 +1,8 @@
+.photo--first {
+  width: 40vw;
+  height: 610px;
+  border-radius: 20% 0;
+  background: url("assets/section-one__photo.jpg");
+}
+
+/*# sourceMappingURL=photo.css.map */

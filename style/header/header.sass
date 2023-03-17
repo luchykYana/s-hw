@@ -1,0 +1,33 @@
+@import "../general/vars"
+@import "../general/_typography/typography"
+@import "../general/mixins"
+
+.page-header
+  @include width-height-radius(100%, $header-height, 0)
+  @include position(sticky, 0, 0, 10)
+  background-color: $white
+
+  .main-nav
+    @include flex(row, space-evenly, center)
+
+  &__content
+    @include grid(1fr, 3fr 6fr 1fr)
+    align-items: center
+
+  &__nav
+    a
+      @include width-height-radius(fit-content, fit-content, 1em)
+      @extend .nav
+      padding: 3px 10px
+      text-align: center
+      border: 2px solid transparent
+      text-transform: uppercase
+      transition: border-color 200ms, color 200ms
+      cursor: pointer
+      color: $black
+    a:hover
+      color: $green
+      border-color: $green
+
+  &__buttons
+    justify-self: right
