@@ -4,8 +4,8 @@ const next = document.querySelector('.next');
 
 let direction = -1;
 
-prev.addEventListener('click', function() {
-    if(direction === -1){
+prev.addEventListener('click', function () {
+    if (direction === -1) {
         slider.appendChild(slider.childNodes[0])
         direction = 1
     }
@@ -13,7 +13,7 @@ prev.addEventListener('click', function() {
     slider.style.transform = 'translate(33.33%)';
 });
 
-next.addEventListener('click', function() {
+next.addEventListener('click', function () {
     if (direction === 1) {
         slider.prepend(slider.childNodes[slider.childNodes.length - 1]);
         direction = -1;
@@ -23,17 +23,18 @@ next.addEventListener('click', function() {
 });
 
 slider.ontransitionend = () => {
-    if(direction === -1) {
+    if (direction === -1) {
         slider.appendChild(slider.firstElementChild);
         slider.appendChild(slider.firstElementChild);
-    } else  {
+    } else {
         slider.prepend(slider.lastElementChild);
         slider.prepend(slider.lastElementChild);
     }
 
     slider.style.transition = 'none';
     slider.style.transform = 'translate(0)';
-    setTimeout(function() {
+    setTimeout(function () {
         slider.style.transition = 'transform 1.2s ease'
     })
+
 }

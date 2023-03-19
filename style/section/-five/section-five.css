@@ -1,0 +1,29 @@
+.section-five {
+  display: grid;
+  grid-template: 1fr 3fr/1fr;
+  background: url("../assets/vector 1.svg") 15% 80% no-repeat, url("../assets/vector 2.svg") 50% 80% no-repeat, url("../assets/vector 3.svg") 85% 80% no-repeat;
+  margin: 120px 0;
+  text-align: center;
+}
+.section-five__boxes {
+  display: grid;
+  grid-template: 1fr/2fr 2fr 2fr 1fr;
+}
+.section-five__box:nth-child(2n) {
+  align-self: end;
+}
+.section-five__box {
+  width: 180px;
+  height: 180px;
+  border-radius: 20% 0;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 10px 15px #c9c9c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  align-self: center;
+}
+
+/*# sourceMappingURL=section-five.css.map */

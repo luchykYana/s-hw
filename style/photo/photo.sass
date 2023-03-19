@@ -44,3 +44,37 @@
 
   &--person-two
     @include photo("../assets/section-six__person-two.jpg", 110px, 120px, 20% 0)
+
+@media only screen and (max-width: 1000px)
+  .photo
+    &--fifth
+      @include photo("../assets/section-seven__photo-one.jpg", 400px, 250px, 20% 0)
+
+      &__shadow
+        @include border(3px solid $brown, 300px, 150px, 20% 0)
+
+@media only screen and (max-width: 760px)
+  .photo
+    &--first
+      display: none
+
+      &__shadow
+        display: none
+
+    &--second
+      display: none
+
+      &__shadow
+        display: none
+
+    &--third
+      display: none
+
+      &__shadow
+        display: none
+
+    &--fifth
+      @include photo("../assets/section-seven__photo-one.jpg", 300px, 150px, 20% 0)
+
+      &__shadow
+        @include border(3px solid $brown, 300px, 150px, 20% 0)

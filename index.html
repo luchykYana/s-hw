@@ -7,384 +7,481 @@
 </head>
 <body>
 
-<header class="page-header grid-container">
-    <div class="grid-content page-header__content">
-        <div class="page-header__logo">
-            <img src="assets/logo.svg" alt="logo">
-        </div>
+<div class="body" id="blur">
+    <header class="page-header grid-container">
+        <div class="grid-content page-header__content">
+            <div class="page-header__logo">
+                <img src="assets/logo.svg" alt="logo">
+            </div>
 
-        <nav class="main-nav page-header__nav">
-            <a href="#">Home</a>
-            <a href="#">Project</a>
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#c7">Blog</a>
-            <a href="#">Shop</a>
-            <a href="#">Contact</a>
-        </nav>
+            <nav class="main-nav page-header__nav">
+                <a href="#">Home</a>
+                <a href="#c2">Services</a>
+                <a href="#c3">About</a>
+                <a href="#c4">Shop</a>
+                <a href="#c5">Project</a>
+                <a href="#c7">Blog</a>
+                <a href="#c8">Contact</a>
+            </nav>
 
-        <div class="page-header__buttons">
-            <button class="btn btn--sign-up">Sign up</button>
+            <div class="page-header__buttons">
+                <button class="btn btn--sign-up">Sign up</button>
+                <button class="btn btn--info openBtn">&#9776;</button>
+            </div>
         </div>
+    </header>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="scroll-bar"></div>
     </div>
-</header>
 
-<div class="progress-container">
-    <div class="progress-bar" id="scroll-bar"></div>
+    <main class="grid-container">
+        <section class="grid-content-full grid-container">
+            <div class="grid-content section-one">
+                <div>
+                    <p class="caption">Modern interior</p>
+                    <h1 class="heading-lg">
+                        Create your interior design.
+                    </h1>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    </p>
+                    <button class="btn btn--info">Contact</button>
+                </div>
+                <div class="photo">
+                    <div class="photo--first"></div>
+                    <div class="photo--first__shadow"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-content-full grid-container" id="c2">
+            <div class="grid-content section-two">
+                <header class="section-two__header">
+                    <p class="caption">What we do</p>
+                    <h2 class="heading-md">Our service</h2>
+                </header>
+
+                <div class="section-two__content">
+                    <div class="section-two__content__controls">
+                        <div class="radioItem">
+                            <label class="radioLabel"><input type="radio" name="service" value="0" checked>ALL</label>
+                        </div>
+                        <div class="radioItem"><label class="radioLabel">
+                            <input type="radio" name="service" value="1">POSTS</label>
+                        </div>
+                        <div class="radioItem">
+                            <label class="radioLabel"><input type="radio" name="service" value="2">ALBUMS</label>
+                        </div>
+                        <div class="radioItem">
+                            <label class="radioLabel"><input type="radio" name="service" value="3">TODOS</label>
+                        </div>
+                    </div>
+
+                    <div class="section-two__content__services">
+                        <div class="service none">
+                            <h4 class="heading-xs">Post</h4>
+                            <p class="paragraph-mini">Lorem ipsum dolor amet consectetur
+                                adipiscing elit</p>
+                        </div>
+                        <div class="service none">
+                            <h4 class="heading-xs">Album</h4>
+                            <p class="paragraph-mini">Lorem ipsum dolor amet consectetur
+                                adipiscing elit</p>
+                        </div>
+                        <div class="service none">
+                            <h4 class="heading-xs">Todo</h4>
+                            <p class="paragraph-mini">Lorem ipsum dolor amet consectetur
+                                adipiscing elit</p>
+                        </div>
+                        <div class="service none">
+                            <h4 class="heading-xs">Todo</h4>
+                            <p class="paragraph-mini">Lorem ipsum dolor amet consectetur
+                                adipiscing elit</p>
+                        </div>
+                        <div class="service none">
+                            <h4 class="heading-xs">Todo</h4>
+                            <p class="paragraph-mini">Lorem ipsum dolor amet consectetur
+                                adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dot-decor4"></div>
+            </div>
+        </section>
+
+        <section class="grid-content-full grid-container" id="c3">
+            <div class="grid-content section-three">
+                <div class="photo">
+                    <div class="photo--second"></div>
+                    <div class="photo--second__shadow"></div>
+                </div>
+
+                <div>
+                    <p class="caption">About us</p>
+                    <h2 class="heading-md">
+                        Interioris the will of an epoch mextreo
+                    </h2>
+                    <p class="paragraph">
+                        There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form injected
+                        humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum,
+                        sure there isn't anything embarrassing hidden the middleof text.
+                        All the Lorem Ipsum generators on the Internettend to repeat
+                        predefined chunks as necessary, making this the first true
+                        generator on the Internet.
+                    </p>
+                    <button class="btn btn--info">Contact</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-content-full grid-container" id="c4">
+            <div class="grid-content section-four">
+                <div>
+                    <h2 class="mask">20</h2>
+                    <h2 class="heading-md">Years of successful working the market</h2>
+                    <button class="btn btn--info">Read more</button>
+                </div>
+
+                <div class="photo">
+                    <div class="photo--third"></div>
+                    <div class="photo--third__shadow"></div>
+                </div>
+
+                <div class="dot-decor3"></div>
+            </div>
+        </section>
+
+        <section class="grid-content-full grid-container section--background" id="c5">
+            <div class="grid-content section-five">
+                <h2 class="heading-md">3000+ completed work which we have successfully done</h2>
+                <div class="section-five__boxes">
+                    <div class="section-five__box">
+                        <h2 class="numbers">980</h2>
+                        <p class="numbers-text">Project</p>
+                    </div>
+                    <div class="section-five__box">
+                        <h2 class="numbers">520</h2>
+                        <p class="numbers-text">Happy clients</p>
+                    </div>
+                    <div class="section-five__box">
+                        <h2 class="numbers">330</h2>
+                        <p class="numbers-text">Winners</p>
+                    </div>
+                    <div class="section-five__box">
+                        <h2 class="numbers">120</h2>
+                        <p class="numbers-text">Recommend</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-content-full grid-container">
+            <div class="grid-content section-six">
+                <header class="section-six__header">
+                    <p class="caption">Testimonials</p>
+                    <h2 class="heading-md">Client says about us</h2>
+                </header>
+
+                <div>
+                    <div class="controls">
+                        <div class="arrow prev"></div>
+                        <div class="arrow next"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="container__carousel">
+                            <div class="container__carousel__slider">
+                                <section class="slider__block">
+                                    <div class="response photo">
+                                        <div class="response__photo photo--person-one"></div>
+                                        <div class="response__info">
+                                            <header class="response__info__header">
+                                                <h4 class="heading-xs">5. Louis Saville</h4>
+                                                <h5 class="heading-xxs">/CEO at Google inc</h5>
+                                            </header>
+                                            <p class="paragraph-mini">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="slider__block">
+                                    <div class="response photo">
+                                        <div class="response__photo photo--person-two"></div>
+                                        <div class="response__info">
+                                            <header class="response__info__header">
+                                                <h4 class="heading-xs">6. Rekha Varadwaz</h4>
+                                                <h5 class="heading-xxs">/Nike inc</h5>
+                                            </header>
+                                            <p class="paragraph-mini">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="slider__block">
+                                    <div class="response photo">
+                                        <div class="response__photo photo--person-one"></div>
+                                        <div class="response__info">
+                                            <header class="response__info__header">
+                                                <h4 class="heading-xs">1. Louis Saville</h4>
+                                                <h5 class="heading-xxs">/CEO at Google inc</h5>
+                                            </header>
+                                            <p class="paragraph-mini">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="slider__block">
+                                    <div class="response photo">
+                                        <div class="response__photo photo--person-two"></div>
+                                        <div class="response__info">
+                                            <header class="response__info__header">
+                                                <h4 class="heading-xs">2. Rekha Varadwaz</h4>
+                                                <h5 class="heading-xxs">/Nike inc</h5>
+                                            </header>
+                                            <p class="paragraph-mini">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="slider__block">
+                                    <div class="response photo">
+                                        <div class="response__photo photo--person-one"></div>
+                                        <div class="response__info">
+                                            <header class="response__info__header">
+                                                <h4 class="heading-xs">3. Louis Saville</h4>
+                                                <h5 class="heading-xxs">/CEO at Google inc</h5>
+                                            </header>
+                                            <p class="paragraph-mini">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="slider__block">
+                                    <div class="response photo">
+                                        <div class="response__photo photo--person-two"></div>
+                                        <div class="response__info">
+                                            <header class="response__info__header">
+                                                <h4 class="heading-xs">4. Rekha Varadwaz</h4>
+                                                <h5 class="heading-xxs">/Nike inc</h5>
+                                            </header>
+                                            <p class="paragraph-mini">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dot-decor"></div>
+            </div>
+        </section>
+
+        <section class="grid-content-full grid-container" id="c7">
+            <div class="grid-content section-seven">
+                <header class="section-seven__header">
+                    <p class="caption">Latest news</p>
+                    <h2 class="heading-md">From our blog</h2>
+                </header>
+
+                <div class="section-seven__content">
+                    <article class="section-seven__article">
+                        <div class="photo">
+                            <div class="photo--fourth"></div>
+                            <div class="photo--fourth__shadow"></div>
+                        </div>
+                        <h3 class="heading-sm">2020 Interior design trends</h3>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore
+                            et dolore magna aliqua.
+                        </p>
+                        <button class="btn btn--info">Continue reading....</button>
+                    </article>
+
+                    <article class="section-seven__article">
+                        <div class="photo">
+                            <div class="photo--fifth"></div>
+                            <div class="photo--fifth__shadow"></div>
+                        </div>
+                        <h3 class="heading-sm">28 Notable product at ARC interior design</h3>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore
+                            et
+                            dolore magna aliqua.
+                        </p>
+                        <button class="btn btn--info">Continue reading....</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-content-full grid-container" id="c8">
+            <div class="grid-content section-eight">
+                <h2 class="heading-md">DON’T FORGET TO SIGN UP</h2>
+                <hr class="form__hr">
+                <p class="paragraph">
+                    Find out early about all upcoming promotions and new product releases with our newsletter.
+                </p>
+                <form class="form section-eight__form" id="subscribe-form" autocomplete="on">
+                    <div>
+                        <label>
+                            <input type="text" name="name" placeholder="Enter your name..." class="form__input"
+                                   required>
+                        </label>
+                        <label>
+                            <input type="text" name="surname" placeholder="Enter your surname..." class="form__input"
+                                   required>
+                        </label>
+                    </div>
+                    <label>
+                        <input type="email" name="email" placeholder="Enter your email..." class="form__input--long"
+                               required>
+                    </label>
+                    <button type="submit" class="btn btn--info">Subscribe</button>
+                </form>
+                <div class="form__message paragraph">Thank you for subscribing! We will send you a letter!</div>
+                <div class="dot-decor2"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="grid-content-full grid-container footer__background">
+        <div class="grid-content footer">
+            <div class="footer__info">
+                <div>
+                    <div class="footer__logo">
+                        <img src="assets/logo.svg" alt="logo">
+                    </div>
+                    <p class="paragraph-mini">But I must explain to you all this mistaken idea of denouncing
+                        pleasure.</p>
+                </div>
+
+                <section>
+                    <h4 class="heading-xs">Quick Links</h4>
+                    <ul class="footer__nav-list">
+                        <li>
+                            <a href="#" class="paragraph-mini">About Our Company</a>
+                        </li>
+                        <li>
+                            <a href="#" class="paragraph-mini">Services WE provide</a>
+                        </li>
+                        <li>
+                            <a href="#" class="paragraph-mini">Career & Opportunity</a>
+                        </li>
+                        <li>
+                            <a href="#" class="paragraph-mini">Privacy & policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="paragraph-mini">Contact US</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 class="heading-xs">Company</h4>
+                    <ul class="footer__nav-list">
+                        <li>
+                            <a href="#" class="paragraph-mini">About Company</a>
+                        </li>
+                        <li>
+                            <a href="#" class="paragraph-mini">Our Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#" class="paragraph-mini">Latest News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="paragraph-mini">Our misson</a>
+                        </li>
+                        <li>
+                            <a href="#" class="paragraph-mini">Get a free Quot</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 class="heading-xs">Contact us</h4>
+                    <ul class="footer__nav-list">
+                        <li>
+                            <a href="#" class="paragraph-mini">Sagrada Familia, Herba</a>
+                        </li>
+                        <li>
+                            <a href="#" class="paragraph-mini">Street Front USA</a>
+                        </li>
+                        <li>
+                            <a href="mailto:brandoxide@gmail.com" class="paragraph-mini">brandoxide@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+002568423591" class="paragraph-mini">002-568423591</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="footer__social-network">
+                    <h4 class="heading-xs">Follow us</h4>
+                    <div>
+                        <button class="icon icon_facebook"
+                                onclick="window.open('https://uk-ua.facebook.com/', '_blank')"></button>
+                        <button class="icon icon_twitter"
+                                onclick="window.open('https://twitter.com/?lang=uk', '_blank')"></button>
+                        <button class="icon icon_instagram"
+                                onclick="window.open('https://www.instagram.com/', '_blank')"></button>
+                        <button class="icon icon_linked-in"
+                                onclick="window.open('https://www.linkedin.com/', '_blank')"></button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer__copyright paragraph-mini">Copyright @ 2020 Brandoxide.all right reserved.</div>
+
+            <div class="dot-decor"></div>
+        </div>
+    </footer>
 </div>
 
-<main class="grid-container">
-    <section class="grid-content section-one">
-        <div>
-            <p class="caption">Modern interior</p>
-            <h1 class="heading-lg">
-                Create your interior design.
-            </h1>
-            <p class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation.
-            </p>
-            <button class="btn btn--info">Contact</button>
-        </div>
-        <div class="photo">
-            <div class="photo--first"></div>
-            <div class="photo--first__shadow"></div>
-        </div>
-    </section>
+<div id="popup">
+    <h3 class="popup__text">Congratulation!</h3>
+    <button class="btn btn--info popup__button">Thank you!</button>
+</div>
 
-    <section class="grid-content section-two"></section>
-
-    <section class="grid-content section-three">
-        <div class="photo">
-            <div class="photo--second"></div>
-            <div class="photo--second__shadow"></div>
-        </div>
-
-        <div>
-            <p class="caption">About us</p>
-            <h2 class="heading-md">
-                Interioris the will of an epoch mextreo
-            </h2>
-            <p class="paragraph">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form injected
-                humour, or randomised words which don't look even slightly
-                believable. If you are going to use a passage of Lorem Ipsum,
-                sure there isn't anything embarrassing hidden the middleof text.
-                All the Lorem Ipsum generators on the Internettend to repeat
-                predefined chunks as necessary, making this the first true
-                generator on the Internet.
-            </p>
-            <button class="btn btn--info">Contact</button>
-        </div>
-    </section>
-
-    <section class="grid-content section-four">
-        <div>
-            <h2 class="mask">20</h2>
-            <h2 class="heading-md">Years of successful working the market</h2>
-            <button class="btn btn--info">Read more</button>
-        </div>
-
-        <div class="photo">
-            <div class="photo--third"></div>
-            <div class="photo--third__shadow"></div>
-        </div>
-    </section>
-
-    <section class="grid-content-full grid-container section--background">
-        <div class="grid-content section-five">
-            <h2 class="heading-md">3000+ completed work which we have successfully done</h2>
-            <div class="section-five__boxes">
-                <div class="section-five__box">
-                    <h2 class="numbers">980</h2>
-                    <p class="numbers-text">Project</p>
-                </div>
-                <div class="section-five__box">
-                    <h2 class="numbers">520</h2>
-                    <p class="numbers-text">Happy clients</p>
-                </div>
-                <div class="section-five__box">
-                    <h2 class="numbers">330</h2>
-                    <p class="numbers-text">Winners</p>
-                </div>
-                <div class="section-five__box">
-                    <h2 class="numbers">120</h2>
-                    <p class="numbers-text">Recommend</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="grid-content section-six">
-        <header class="section-six__header">
-            <p class="caption">Testimonials</p>
-            <h2 class="heading-md">Client says about us</h2>
-        </header>
-
-        <div>
-            <div class="controls">
-                <div class="arrow prev"></div>
-                <div class="arrow next"></div>
-            </div>
-
-            <div class="container">
-                <div class="container__carousel">
-                    <div class="container__carousel__slider">
-                        <section class="slider__block">
-                            <div class="response photo">
-                                <div class="response__photo photo--person-one"></div>
-                                <div class="response__info">
-                                    <header class="response__info__header">
-                                        <h4 class="heading-xs">5. Louis Saville</h4>
-                                        <h5 class="heading-xxs">/CEO at Google inc</h5>
-                                    </header>
-                                    <p class="paragraph-mini">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="slider__block">
-                            <div class="response photo">
-                                <div class="response__photo photo--person-two"></div>
-                                <div class="response__info">
-                                    <header class="response__info__header">
-                                        <h4 class="heading-xs">6. Louis Saville</h4>
-                                        <h5 class="heading-xxs">/CEO at Google inc</h5>
-                                    </header>
-                                    <p class="paragraph-mini">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="slider__block">
-                            <div class="response photo">
-                                <div class="response__photo photo--person-one"></div>
-                                <div class="response__info">
-                                    <header class="response__info__header">
-                                        <h4 class="heading-xs">1. Louis Saville</h4>
-                                        <h5 class="heading-xxs">/CEO at Google inc</h5>
-                                    </header>
-                                    <p class="paragraph-mini">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="slider__block">
-                            <div class="response photo">
-                                <div class="response__photo photo--person-two"></div>
-                                <div class="response__info">
-                                    <header class="response__info__header">
-                                        <h4 class="heading-xs">2. Louis Saville</h4>
-                                        <h5 class="heading-xxs">/CEO at Google inc</h5>
-                                    </header>
-                                    <p class="paragraph-mini">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="slider__block">
-                            <div class="response photo">
-                                <div class="response__photo photo--person-one"></div>
-                                <div class="response__info">
-                                    <header class="response__info__header">
-                                        <h4 class="heading-xs">3. Louis Saville</h4>
-                                        <h5 class="heading-xxs">/CEO at Google inc</h5>
-                                    </header>
-                                    <p class="paragraph-mini">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="slider__block">
-                            <div class="response photo">
-                                <div class="response__photo photo--person-two"></div>
-                                <div class="response__info">
-                                    <header class="response__info__header">
-                                        <h4 class="heading-xs">4. Louis Saville</h4>
-                                        <h5 class="heading-xxs">/CEO at Google inc</h5>
-                                    </header>
-                                    <p class="paragraph-mini">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="grid-content-full grid-container">
-        <div class="grid-content section-seven">
-            <header class="section-seven__header">
-                <p class="caption">Latest news</p>
-                <h2 class="heading-md" id="c7">From our blog</h2>
-            </header>
-
-            <div class="section-seven__content">
-                <article class="section-seven__article">
-                    <div class="photo">
-                        <div class="photo--fourth"></div>
-                        <div class="photo--fourth__shadow"></div>
-                    </div>
-                    <h3 class="heading-sm">2020 Interior design trends</h3>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et
-                        dolore magna aliqua.
-                    </p>
-                    <button class="btn btn--info">Continue reading....</button>
-                </article>
-
-                <article class="section-seven__article">
-                    <div class="photo">
-                        <div class="photo--fifth"></div>
-                        <div class="photo--fifth__shadow"></div>
-                    </div>
-                    <h3 class="heading-sm">28 Notable product at ARC interior design</h3>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et
-                        dolore magna aliqua.
-                    </p>
-                    <button class="btn btn--info">Continue reading....</button>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="grid-content section-eight">
-        <h2 class="heading-md">DON’T FORGET TO SIGN UP</h2>
-        <hr class="form__hr">
-        <p class="paragraph">
-            Find out early about all upcoming promotions and new product releases with our newsletter.
-        </p>
-        <form class="form section-eight__form" id="subscribe-form">
-            <div>
-                <label>
-                    <input type="text" placeholder="Enter your name..." class="form__input" pattern="^[A-Z][a-z]*$">
-                </label>
-                <label>
-                    <input type="text" placeholder="Enter your surname..." class="form__input" pattern="^[A-Z][a-z]*$">
-                </label>
-            </div>
-            <label>
-                <input type="email" placeholder="Enter your email..." class="form__input--long"
-                       pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-            </label>
-            <button type="submit" class="btn btn--info">Subscribe</button>
-        </form>
-    </section>
-</main>
-
-<footer class="grid-content-full grid-container footer__background">
-    <div class="grid-content footer">
-        <div class="footer__info">
-            <section>
-                <div class="footer__logo">
-                    <img src="assets/logo.svg" alt="logo">
-                </div>
-                <p class="paragraph-mini">But I must explain to you all this mistaken idea of denouncing
-                    pleasure.</p>
-            </section>
-
-            <section>
-                <h4 class="heading-xs">Quick Links</h4>
-                <ul class="footer__nav-list">
-                    <li>
-                        <a href="#" class="paragraph-mini">About Our Company</a>
-                    </li>
-                    <li>
-                        <a href="#" class="paragraph-mini">Services WE provide</a>
-                    </li>
-                    <li>
-                        <a href="#" class="paragraph-mini">Career & Opportunity</a>
-                    </li>
-                    <li>
-                        <a href="#" class="paragraph-mini">Privacy & policy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="paragraph-mini">Contact US</a>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h4 class="heading-xs">Company</h4>
-                <ul class="footer__nav-list">
-                    <li>
-                        <a href="#" class="paragraph-mini">About Company</a>
-                    </li>
-                    <li>
-                        <a href="#" class="paragraph-mini">Our Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#" class="paragraph-mini">Latest News</a>
-                    </li>
-                    <li>
-                        <a href="#" class="paragraph-mini">Our misson</a>
-                    </li>
-                    <li>
-                        <a href="#" class="paragraph-mini">Get a free Quot</a>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h4 class="heading-xs">Contact us</h4>
-                <ul class="footer__nav-list">
-                    <li>
-                        <a href="#" class="paragraph-mini">Sagrada Familia, Herba</a>
-                    </li>
-                    <li>
-                        <a href="#" class="paragraph-mini">Street Front USA</a>
-                    </li>
-                    <li>
-                        <a href="mailto:brandoxide@gmail.com" class="paragraph-mini">brandoxide@gmail.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+002568423591" class="paragraph-mini">002-568423591</a>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="footer__social-network">
-                <h4 class="heading-xs">Follow us</h4>
-                <div>
-                    <button class="icon icon_facebook"
-                            onclick="window.open('https://uk-ua.facebook.com/', '_blank')"></button>
-                    <button class="icon icon_twitter"
-                            onclick="window.open('https://twitter.com/?lang=uk', '_blank')"></button>
-                    <button class="icon icon_instagram"
-                            onclick="window.open('https://www.instagram.com/', '_blank')"></button>
-                    <button class="icon icon_linked-in"
-                            onclick="window.open('https://www.linkedin.com/', '_blank')"></button>
-                </div>
-            </section>
-        </div>
-
-        <div class="footer__copyright paragraph-mini">Copyright @ 2020 Brandoxide.all right reserved.</div>
-
-        <div class="dot-decor"></div>
+<div class="load">
+    <div class="load__stage">
+        <div class="d letter"></div>
+        <div class="e letter"></div>
+        <div class="с letter"></div>
+        <div class="b letter"></div>
+        <div class="a letter"></div>
+        <div class="s letter"></div>
+        <div class="e2 letter"></div>
     </div>
-</footer>
+    <div class="load__stage">
+        <div class="logo"></div>
+    </div>
+</div>
 
 <script src="style/progress-bar/progress-bar.js"></script>
-<script src="style/section/section-seven.js"></script>
+<script src="style/section/-two/section-two.js"></script>
+<script src="style/section/-seven/section-seven.js"></script>
 <script src="style/slider/slider.js"></script>
-<script src="style/form/form.js"></script>
+<script src="style/form/form.js" type="module"></script>
 <script src="style/footer/footer.js"></script>
+<script src="style/popup/popup.js"></script>
+<script src="style/loading/loading.js"></script>
+<script src="style/header/header.js"></script>
 </body>
 </html>

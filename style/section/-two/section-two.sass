@@ -1,0 +1,22 @@
+@import "../../general/mixins"
+
+.section-two
+  margin: 100px 0
+  position: relative
+
+  &__header
+    margin-bottom: 30px
+
+  &__content
+    &__controls
+      @include flex(row, left, center)
+      margin: 10px 0 40px
+
+    &__services
+      @include flex(row, center, center)
+      flex-wrap: wrap
+      grid-column-gap: 4vw
+
+@media only screen and (max-width: 760px)
+  .section-two
+    margin: 0

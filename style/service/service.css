@@ -1,0 +1,109 @@
+.heading-lg {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 4.2em;
+}
+
+.heading-md {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 3em;
+}
+
+.heading-sm {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.6em;
+}
+
+.heading-xs {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5em;
+}
+
+.heading-xxs {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1em;
+}
+
+.caption {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #646464;
+}
+
+.btn-text {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
+.nav {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1em;
+}
+
+.paragraph {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 1.1em;
+  color: #646464;
+}
+
+.paragraph-mini {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 1em;
+  color: #646464;
+}
+
+.mask-text {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 15em;
+}
+
+.numbers {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 2.8em;
+}
+
+.numbers-text {
+  font-family: Poppins, Georgia, serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1em;
+  color: #646464;
+}
+
+.heading-lg, .heading-md, .heading-sm {
+  text-transform: capitalize;
+}
+
+.service {
+  width: 480px;
+  height: 160px;
+  border-radius: 2em 0;
+  border: 1px solid transparent;
+  box-shadow: 0 5px 15px #c9c9c9;
+}
+
+/*# sourceMappingURL=service.css.map */

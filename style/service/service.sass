@@ -1,0 +1,34 @@
+@import '../general/mixins'
+@import '../general/vars'
+@import '../general/_typography/typography'
+
+.service
+  @include border(1px solid transparent, 350px, 140px, 4em 0)
+  @include shadow(0 5px 15px, $gray-shadow)
+  padding: 25px 10px 5px 80px
+  margin: 40px 0
+  opacity: 1
+  transition: opacity .3s
+
+  &__post
+    background: url("../assets/post.png") 10% 30%/10% no-repeat
+
+  &__album
+    background: url("../assets/album.png") 10% 30%/10% no-repeat, $light-brown
+    color: $white
+
+    .paragraph-mini
+      color: $white
+
+  &__todo
+    background: url("../assets/todo.png") 10% 30%/10% no-repeat
+
+.none
+  opacity: 0
+  transition: opacity .3s
+
+@media only screen and (max-width: 760px)
+  .service
+    @include border(1px solid transparent, 400px, 100px, 4em 0)
+    padding: 25px 10px 5px 100px
+    margin: 10px 0

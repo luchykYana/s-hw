@@ -11,6 +11,7 @@
 
   &--sign-up
     @include width-height-radius(100px, 30px, 15px 0)
+    margin-right: 20px
     background-color: $light-brown
     color: $white
     text-transform: capitalize
@@ -31,3 +32,27 @@
     background-color: $white
     color: $green
     border: 1px solid $green
+
+.radioItem
+  @include border(5px solid $green, 200px, 40px, 2em)
+  @include flex(row, center, center)
+  @extend .nav
+  background-color: $green
+  margin: 3px 3vw 0 3px
+  color: $white
+  transition: box-shadow .2s
+
+label.radioLabel
+  width: 100%
+  text-align: center
+
+label.radioLabel > input
+  visibility: hidden
+  position: absolute
+
+.radioItem:has(input:checked)
+  background-color: $white
+  color: $green
+
+.radioItem:has(input:hover)
+  @include shadow(0 5px 15px, $green)

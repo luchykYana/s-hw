@@ -9,10 +9,19 @@
 
   .main-nav
     @include flex(row, space-evenly, center)
+    visibility: visible
+    opacity: 1
 
   &__content
     @include grid(1fr, 3fr 6fr 1fr)
     align-items: center
+
+    .openBtn
+      height: 30px
+      padding: 3px 45px
+
+    .openBtn, .closeBtn
+      display: none
 
   &__nav
     a
@@ -25,9 +34,38 @@
       transition: border-color 200ms, color 200ms
       cursor: pointer
       color: $black
+
     a:hover
       color: $green
       border-color: $green
 
   &__buttons
     justify-self: right
+    display: flex
+    align-items: center
+
+@media only screen and (max-width: 860px)
+  .page-header
+    .main-nav
+      position: absolute
+      top: 100%
+      right: 60px
+      flex-direction: column
+      align-items: end
+      visibility: hidden
+      opacity: 0
+      background-color: $green
+      border-radius: 0 0 2em 0
+      transition: opacity .5s
+
+    &__content
+      .openBtn, .closeBtn
+        display: flex
+
+    &__nav
+      a
+        color: $white
+        margin: 5px
+
+      a:hover
+        color: $black

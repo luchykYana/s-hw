@@ -1,0 +1,25 @@
+@import "../../general/mixins"
+@import "../../general/vars"
+
+.section-five
+  @include grid(1fr 3fr, 1fr)
+  background: url("../assets/vector 1.svg") 15% 80% no-repeat,url("../assets/vector 2.svg") 50% 80% no-repeat,url("../assets/vector 3.svg") 85% 80% no-repeat
+  margin: 120px 0
+  text-align: center
+
+  &__boxes
+    @include grid(1fr, 2fr 2fr 2fr 1fr)
+
+  &__box:nth-child(2n)
+    align-self: end
+
+  &__box
+    @include border(1px solid $white, 180px, 180px, 20% 0)
+    @include shadow(0 10px 15px, $gray-shadow)
+    @include flex(column, center, center)
+    background-color: $white
+    align-self: center
+
+@media only screen and (max-width: 760px)
+  .section-five
+    display: none

@@ -1,0 +1,62 @@
+@import "../../general/mixins"
+
+.section-seven
+  @include grid(1.1fr 5fr, 1fr)
+  margin: 100px 0
+
+  &__header
+    text-align: center
+
+  &__content
+    @include grid(1fr, repeat(2, 1fr))
+    grid-column-gap: 7vw
+
+  &__article
+    position: relative
+    right: 100px
+    opacity: 0
+    transition: transform .5s
+
+    .photo
+      transition: transform .5s
+
+    .heading-sm
+      margin: 40px 0 10px
+
+    .paragraph
+      margin-bottom: 30px
+
+  &__article:hover
+    .photo
+      transform: scale(1.1)
+
+  &__show
+    transform: translateX(0%)
+
+@keyframes articles
+  0%
+    opacity: 0
+    right: 100px
+  100%
+    opacity: 1
+    right: 0
+
+@media only screen and (max-width: 1000px)
+  .section-seven
+    &__content
+      @include flex(row, center, center)
+
+    &__article
+      @include flex(column, center, center)
+      width: 50%
+
+    &__article:nth-child(1)
+      display: none
+
+@media only screen and (max-width: 760px)
+  .section-seven
+    margin: 50px 0
+
+    &__article
+      @include flex(column, center, center)
+      width: 80%

@@ -1,0 +1,22 @@
+.section-eight {
+  margin: 100px 0 50px;
+  text-align: center;
+  position: relative;
+}
+.section-eight p.paragraph {
+  width: 58%;
+  margin: 40px auto 20px;
+}
+.section-eight hr {
+  width: 35%;
+  color: #F8F8F8;
+  margin-top: 20px;
+}
+.section-eight__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=section-eight.css.map */

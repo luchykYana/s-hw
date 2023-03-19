@@ -1,0 +1,23 @@
+@import "../../general/mixins"
+
+.section-four
+  @include grid(1fr, 1fr 1fr)
+  grid-column-gap: 4vw
+  align-items: center
+  margin: 100px 0
+  position: relative
+
+  .mask
+    @extend .mask-text
+    color: transparent
+    -webkit-background-clip: text
+    background-clip: text
+    background-image: url("../assets/wooden-texture.png")
+
+  .heading-md
+    margin: 10px 0 40px
+
+@media only screen and (max-width: 760px)
+  .section-four
+    display: flex
+    margin: 0 20px

@@ -1,0 +1,31 @@
+@import "../../general/mixins"
+@import "../../general/vars"
+
+.section-six
+  margin: 100px 0 20px
+  position: relative
+
+  &__header
+    text-align: center
+    margin-bottom: 50px
+
+  .response
+    @include border(1px solid $white, 490px, 190px, 5em 0)
+    @include shadow(0 5px 20px, $gray-shadow)
+    background: url('../assets/quotes.svg') 95% 15% no-repeat
+    padding: 40px 10px 0 70px
+
+    &__photo
+      @include position(absolute, 40px, -60px, 2)
+
+    &__info
+      &__header
+        @include flex(row, normal, baseline)
+        margin-bottom: 10px
+
+      .heading-xxs
+        color: $gray
+
+@media only screen and (max-width: 1200px)
+  .section-six
+    display: none

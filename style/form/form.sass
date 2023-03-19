@@ -7,8 +7,31 @@
     @extend .paragraph
     background-color: $light-gray
     padding: 0 50px
-    margin: 25px 25px
+    margin: 20px 25px
 
     &--long
       @extend .form__input
       width: 43vw
+
+  &__input:focus
+    outline-color: $green
+
+  &__input:focus:invalid
+    outline-color: $brown
+
+  &__message
+    @include border(1px solid $green, fit-content, fit-content, 1em 0)
+    padding: 10px 50px
+    margin: 20px auto
+    opacity: 0
+    transition: opacity 2s
+
+  button[type='submit']
+    margin-top: 30px
+
+@media only screen and (max-width: 760px)
+  .form
+    &__input
+      @include border(1px solid transparent, 60vw, 40px, 1.5em 0)
+      //@extend .paragraph-mini
+

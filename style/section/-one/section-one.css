@@ -1,0 +1,12 @@
+.section-one {
+  display: grid;
+  grid-template: 1fr/2fr 1fr;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.section-one .paragraph {
+  margin: 40px 0 50px;
+  width: 90%;
+}
+
+/*# sourceMappingURL=section-one.css.map */

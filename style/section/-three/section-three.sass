@@ -1,0 +1,16 @@
+@import "../../general/mixins"
+
+.section-three
+  @include grid(1fr, 1fr 2fr)
+  grid-column-gap: 7vw
+  margin: 100px 0
+
+  .heading-md
+    width: 90%
+
+  .paragraph
+    margin: 20px 0 40px
+
+@media only screen and (max-width: 760px)
+  .section-three
+    display: flex

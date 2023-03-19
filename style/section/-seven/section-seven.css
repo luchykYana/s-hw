@@ -1,0 +1,47 @@
+.section-seven {
+  display: grid;
+  grid-template: 1.1fr 5fr/1fr;
+  margin: 100px 0;
+}
+.section-seven__header {
+  text-align: center;
+}
+.section-seven__content {
+  display: grid;
+  grid-template: 1fr/repeat(2, 1fr);
+  grid-column-gap: 7vw;
+}
+.section-seven__article {
+  position: relative;
+  right: 100px;
+  opacity: 0;
+  transition: transform 0.5s;
+}
+.section-seven__article .photo {
+  transition: transform 0.5s;
+}
+.section-seven__article .heading-sm {
+  margin: 40px 0 10px;
+}
+.section-seven__article .paragraph {
+  margin-bottom: 30px;
+}
+.section-seven__article:hover .photo {
+  transform: scale(1.1);
+}
+.section-seven__show {
+  transform: translateX(0%);
+}
+
+@keyframes articles {
+  0% {
+    opacity: 0;
+    right: 100px;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=section-seven.css.map */

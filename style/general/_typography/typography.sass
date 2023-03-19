@@ -17,33 +17,63 @@
   @include fontStyle(400, 1em, 1, $first-font, $safe-serif, $font-serif)
 
 .caption
-  @include fontStyle(500, 1.25em, 1.5, $first-font, $safe-serif, $font-serif)
+  @include fontStyle(500, 1.25em, 1.5, $second-font, $safe-sans-serif, $font-sans-serif)
   text-transform: uppercase
-  color: $gray
 
 .btn-text
-  @include fontStyle(500, 1.1em, 1.5, $first-font, $safe-serif, $font-serif)
+  @include fontStyle(600, 1.1em, 1.5, $second-font, $safe-sans-serif, $font-sans-serif)
 
 .nav
-  @include fontStyle(500, 1em, 1, $first-font, $safe-serif, $font-serif)
+  @include fontStyle(600, 1em, 1, $second-font, $safe-sans-serif, $font-sans-serif)
 
 .paragraph
-  @include fontStyle(300, 1.1em, 1.8, $first-font, $safe-serif, $font-serif)
-  color: $gray
+  @include fontStyle(300, 1.1em, 1.8, $second-font, $safe-sans-serif, $font-sans-serif)
 
 .paragraph-mini
-  @include fontStyle(300, 1em, 1.7, $first-font, $safe-serif, $font-serif)
-  color: $gray
+  @include fontStyle(300, 1em, 1.7, $second-font, $safe-sans-serif, $font-sans-serif)
 
 .mask-text
-  @include fontStyle(600, 15em, 1, $first-font, $safe-serif, $font-serif)
+  @include fontStyle(700, 15em, 1, $second-font, $safe-sans-serif, $font-sans-serif)
 
 .numbers
   @include fontStyle(600, 2.8em, 1.3, $first-font, $safe-serif, $font-serif)
 
 .numbers-text
   @include fontStyle(500, 1em, 1.5, $first-font, $safe-serif, $font-serif)
-  color: $gray
 
 .heading-lg, .heading-md, .heading-sm
   text-transform: capitalize
+
+.caption, .paragraph, .paragraph-mini, .numbers-text
+  color: $gray
+
+@media only screen and (max-width: 760px)
+  .heading-lg
+    @include fontStyle(600, 3em, 1.2, $first-font, $safe-serif, $font-serif)
+
+  .heading-md
+    @include fontStyle(500, 1.6em, 1.3, $first-font, $safe-serif, $font-serif)
+
+  .heading-sm
+    @include fontStyle(500, 1.2em, 1, $first-font, $safe-serif, $font-serif)
+
+  .heading-xs
+    @include fontStyle(600, 1em, 1, $first-font, $safe-serif, $font-serif)
+
+  .heading-xxs
+    @include fontStyle(400, .8em, 1, $first-font, $safe-serif, $font-serif)
+
+  .caption
+    @include fontStyle(500, 1em, 1.5, $second-font, $safe-sans-serif, $font-sans-serif)
+
+  .btn-text
+    @include fontStyle(600, .9em, 1.5, $second-font, $safe-sans-serif, $font-sans-serif)
+
+  .nav
+    @include fontStyle(600, .9em, 1, $second-font, $safe-sans-serif, $font-sans-serif)
+
+  .paragraph
+    @include fontStyle(300, 1em, 1.8, $second-font, $safe-sans-serif, $font-sans-serif)
+
+  .paragraph-mini
+    @include fontStyle(300, .8em, 1.7, $second-font, $safe-sans-serif, $font-sans-serif)

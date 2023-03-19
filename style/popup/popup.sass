@@ -1,0 +1,31 @@
+@import "../general/mixins"
+@import "../general/vars"
+@import "../general/_typography/typography"
+
+#popup
+  @include border(1px solid $green, 40%, fit-content, 2em 0)
+  @include position(fixed, 20%, 30%, 20)
+  @extend .heading-sm
+  text-transform: none
+  text-align: center
+  line-height: 2
+  background-color: $white
+  color: $green
+  padding: 20px 30px
+  visibility: hidden
+  opacity: 0
+  transition: 0.5s
+
+  .btn
+    @extend .heading-xxs
+    margin-top: 20px
+
+#popup.active
+  visibility: visible
+  top: 30%
+  opacity: 1
+
+.body#blur.active
+  filter: blur(20px)
+  pointer-events: none
+  user-select: none

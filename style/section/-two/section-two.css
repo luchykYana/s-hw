@@ -1,0 +1,24 @@
+.section-two {
+  margin: 100px 0;
+  position: relative;
+}
+.section-two__header {
+  margin-bottom: 30px;
+}
+.section-two__content__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 10px 0 40px;
+}
+.section-two__content__services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-column-gap: 4vw;
+}
+
+/*# sourceMappingURL=section-two.css.map */
